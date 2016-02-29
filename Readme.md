@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василий Толкачёв](https://up.htmlacademy.ru/adaptive/6/user/121852).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
