@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header class="page-header">
-    <div class="content-wrapper">
+    <div class="page-header__wrapper">
       <a class="logo" href="#">Pink</a>
       <button class="page-header__toggle-menu  page-header__toggle-menu--close js-toggleMenuBtn" type="button"><span>Меню</span>
       </button>
@@ -29,17 +29,19 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="content-header">
-      <div class="wrapper">
-        <h1 class="content-header__title">Конкурс на&nbsp;самое безбашеное путешествие с&nbsp;Пинк</h1>
-        <div class="content-header__description">
-          <p>Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000&nbsp;миль на&nbsp;вашу бонусную карту!</p>
-        </div>
+    <div class="intro">
+      <div class="intro__wrapper">
+        <h1>Конкурс на&nbsp;самое безбашеное путешествие с&nbsp;Пинк</h1>
       </div>
-    </section>
+    </div>
+    <div class="content-description">
+      <div class="content-description__wrapper">
+        <p>Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000&nbsp;миль на&nbsp;вашу бонусную карту!</p>
+      </div>
+    </div>
     <form class="form" action="/echo" enctype="multipart/form-data" method="post">
       <fieldset class="form__group  form__group--white">
-        <div class="wrapper">
+        <div class="form__wrapper">
           <div class="form__fields">
             <div class="form__entry-field">
               <label class="form__label" for="first-name">Имя:</label>
@@ -57,7 +59,7 @@
         </div>
       </fieldset>
       <fieldset class="form__group  form__group--grey">
-        <div class="wrapper">
+        <div class="form__wrapper">
           <legend class="form__group-title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
           <div class="form__fields">
             <div class="form__entry-field  form__entry-field--switch  form__entry-field--checkbox">
@@ -88,7 +90,7 @@
         </div>
       </fieldset>
       <fieldset class="form__group  form__group--white">
-        <div class="wrapper">
+        <div class="form__wrapper">
           <div class="form__entry-field">
             <label class="form__label" for="phone-number">Номерок телефончика</label>
             <input class="form__field" type="tel" id="phone-number" placeholder="Номер, пожалуйста" name="phone-number">
@@ -100,7 +102,7 @@
         </div>
       </fieldset>
       <fieldset class="form__group  form__group--grey">
-        <div class="wrapper">
+        <div class="form__wrapper">
           <legend class="form__group-title">С&nbsp;каким приложением путешествовали?</legend>
           <div class="form__fields">
             <div class="form__entry-field  form__entry-field--switch  form__entry-field--radio">
@@ -119,14 +121,14 @@
         </div>
       </fieldset>
       <fieldset class="form__group  form__group--white">
-        <div class="wrapper">
+        <div class="form__wrapper">
           <div class="form__entry-field  form__entry-field--textarea">
             <label class="form__label" for="comment-field">Опишите свои эмоции</label>
             <textarea name="coment" id="comment-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </div>
       </fieldset>
-      <div class="wrapper">
+      <div class="form__wrapper">
         <input class="button" type="submit" value="Отправить форму">
         <span class="form__hint">*-обязательные поля</span>
       </div>
@@ -134,7 +136,7 @@
   </main>
 
   <footer class="page-footer">
-    <div class="wrapper">
+    <div class="page-footer__wrapper">
       <a class="logo  logo--extended" href="#">Pink</a>
       <div class="social-links">
         <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
