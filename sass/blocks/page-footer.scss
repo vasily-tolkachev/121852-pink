@@ -1,0 +1,30 @@
+.page-footer {
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__copyright-link {
+    @include reset-link-style;
+    position: relative;
+    display: block;
+    text-align: left;
+    color: $pages-text-color;
+    width: 140px;
+    margin: 20px auto;
+
+    span {
+      display: none;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 35px;
+      height: 35px;
+      top: 0;
+      right: 0;
+      background: url(../img/logo-htmlacademy.svg) no-repeat;
+    }
+  }
+}

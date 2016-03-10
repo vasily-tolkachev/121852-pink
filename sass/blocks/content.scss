@@ -1,0 +1,160 @@
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
+.logo {
+  font-size: 0;
+  display: block;
+  width: 90px;
+  height: 20px;
+  background: url(../img/logo-pink-white-mobile.svg) no-repeat;
+
+  &--header {
+    float: left;
+  }
+
+  &--extended {
+    background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
+    width: 150px;
+    height: 45px;
+    margin: 20px auto;
+  }
+}
+
+.social-links {
+  display: block;
+  font-size: 0;
+  text-align: center;
+  padding: 10px 0;
+
+  &__btn {
+    @include inline-block($valign: top);
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 3px solid $form-field-color-gray;
+    border-radius: 50%;
+    margin: 6px;
+
+    &--twitter {
+      background: url(../img/icon-twitter.svg) no-repeat 50% 50%;
+    }
+
+    &--facebook {
+      background: url(../img/icon-facebook.svg) no-repeat 50% 50%;
+    }
+
+    &--you-tube {
+      background: url(../img/icon-youtube.svg) no-repeat 50% 50%;
+    }
+  }
+
+
+}
+
+.button {
+  @include reset-button-style;
+  @include form-field-font-settings;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  background-color: $button-color;
+  width: 100%;
+  height: 63px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.popup {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  &__wrapper {
+    padding: 0 20px;
+
+    &--gray {
+      background-color: $form-field-color-gray;
+      padding: 40px 20px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__description {
+    padding: 10px 0;
+  }
+}
+
+.download-block {
+  @include gl2();
+
+  &__btn {
+    @include gl3();
+  }
+
+  &__text {
+    @include gl3();
+  }
+}
+
+.store-links {
+  @include clearfix;
+  @include gl3();
+}
+
+.store-link {
+  float: left;
+  @include gl4();
+}
+
+.offer-block {
+  @include gl2();
+
+  &__caption {
+    @include gl3();
+  }
+}
+
+.features-list {
+  @include gl2();
+
+}
+
+.features-item {
+  @include gl3();
+
+  &__title {
+    @include gl4();
+  }
+
+  &__description {
+    @include gl4();
+  }
+}
+
+.slider {
+  @include gl2();
+
+  &__slides {
+    @include gl3();
+  }
+
+  &__slide {
+    @include gl4();
+  }
+}
+
+.map {
+  @include gl2();
+}
+
+
