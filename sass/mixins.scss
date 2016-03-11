@@ -40,6 +40,7 @@
   color: $pages-text-color;
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
 }
 
 @mixin form-field-font-settings  {
@@ -71,8 +72,8 @@
 }
 
 @mixin reset-button-style {
-    background: 0;
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
+  background: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

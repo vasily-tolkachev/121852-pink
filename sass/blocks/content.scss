@@ -50,8 +50,6 @@
       background: url(../img/icon-youtube.svg) no-repeat 50% 50%;
     }
   }
-
-
 }
 
 .button {
@@ -92,6 +90,66 @@
   &__description {
     padding: 10px 0;
   }
+}
+
+.like-field {
+  text-transform: uppercase;
+  line-height: 24px;
+  color: $pages-text-color-pink;
+  font-size: 0;
+
+
+  &__label {
+    @include inline-block();
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  &__count{
+    @include inline-block();
+    font-size: 12px;
+  }
+
+  &__btn {
+    @include reset-button-style;
+    @include inline-block();
+    box-sizing: border-box;
+    width: 15px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(../img/icon-heart.svg) no-repeat 50% 50%;
+  }
+}
+
+.range-controls {
+  display: block;
+  padding: 20px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__scale {
+    width: 100%;
+    height: 2px;
+    background-color: $page-color-dark-blue;
+
+  }
+
+  &__toggle {
+    position: absolute;
+    top: -6px;
+    left: 70%;
+    background-color: $pages-color-gray;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid $pages-text-color-pink;
+    border-radius: 50%;
+
+  }
+
+
 }
 
 .download-block {
