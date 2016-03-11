@@ -27,4 +27,29 @@
       background: url(../img/logo-htmlacademy.svg) no-repeat;
     }
   }
+
+  &__header {
+    font-size: 24px;
+  }
+
+  &__contacts {
+    text-align: center;
+  }
+
+  &__contact {
+    padding-bottom: 30px;
+  }
+
+  &__contact-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__contact-address {
+    display: block;
+    @include reset-link-style;
+    font-size: 24px;
+    color: $form-label-color-pink;
+  }
 }

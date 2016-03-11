@@ -7,24 +7,25 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header  page-header--open">
       <div class="page-header__wrapper">
-        <a class="logo" href="#">Pink</a>
-        <button class="page-header__toggle-menu  page-header__toggle-menu--close js-toggleMenuBtn" type="button"><span>Меню</span></button>
+        <a class="logo  logo--header">Pink</a>
+        <button class="page-header__toggle-menu" type="button"><span>Меню</span>
+        </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Информация</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Возможности</a>
+            <a class="main-nav__link" href="#">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Отзывы</a>
+            <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Стоимость</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/"><acronym title="HyperText Markup Language" lang="en">HTML</acronym> Academy</a>
           </li>
         </ul>
       </nav>
@@ -32,16 +33,16 @@
     <main class="page-main">
       <div class="intro  intro--main">
         <div class="intro__wrapper">
-          <h1>Взгляните на&nbsp;жизнь иначе!</h1>
+          <h1 class="intro__text">Взгляните на&nbsp;жизнь иначе!</h1>
         </div>
       </div>
       <div class="download-block">
         <div class="download-block__wrapper">
-          <a class="download-block__btn" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+          <a class="transparent-btn  transparent-btn--white" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
           <div class="store-links">
-            <a class="store-link" href="http://www.apple.com/ru/itunes/">iTunes</a>
-            <a class="store-link" href="https://play.google.com/store">Google Play</a>
-            <a class="store-link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows Phone Store</a>
+            <a class="store-links__link  store-links__link--apple" href="http://www.apple.com/ru/itunes/">iTunes</a>
+            <a class="store-links__link  store-links__link--android" href="https://play.google.com/store">Google Play</a>
+            <a class="store-links__link  store-links__link--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Windows Phone Store</a>
           </div>
           <div class="download-block__text">
             <p>Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows 8</p>
@@ -60,21 +61,21 @@
       </div>
       <div class="features-list">
         <div class="features-list__wrapper">
-          <section class="features-item">
-            <h2 class="features-item__title">Поднимает настроение</h2>
-            <div class="features-item__description">
+          <section class="tell">
+            <h2 class="tell__title">Поднимает настроение</h2>
+            <div class="tell__text">
               <p>Приложение позволит вам победить осеннюю хандру и&nbsp;деперессию буквально в&nbsp;несколько кликов!</p>
             </div>
           </section>
-          <section class="features-item">
-            <h2 class="features-item__title">Меняет мир вокруг</h2>
-            <div class="features-item__description">
+          <section class="tell">
+            <h2 class="tell__title">Меняет мир вокруг</h2>
+            <div class="tell__text">
               <p>Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
           </section>
-          <section class="features-item">
-            <h2 class="features-item__title">Заводит новых друзей</h2>
-            <div class="features-item__description">
+          <section class="tell">
+            <h2 class="tell__title">Заводит новых друзей</h2>
+            <div class="tell__text">
               <p>Ставьте лайки, комментируте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
             </div>
           </section>
@@ -84,36 +85,36 @@
         <div class="slider__wrapper">
           <div class="slider__slides">
             <div class="slider__slide">
-              <section class="comment">
-                <h2 class="comment__author-name">Николай Петров</h2>
-                <blockquote class="comment__text">
+              <section class="tell">
+                <h2 class="tell__title">Николай Петров</h2>
+                <blockquote class="tell__text">
                   <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
                 </blockquote>
               </section>
             </div>
             <div class="slider__slide">
-              <section class="comment">
-                <h2 class="comment__author-name">Николай Петров</h2>
-                <blockquote class="comment__text">
+              <section class="tell">
+                <h2 class="tell__title">Николай Петров</h2>
+                <blockquote class="tell__text">
                   <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
                 </blockquote>
               </section>
             </div>
             <div class="slider__slide">
-              <section class="comment">
-                <h2 class="comment__author-name">Николай Петров</h2>
-                <blockquote class="comment__text">
+              <section class="tell">
+                <h2 class="tell__title">Николай Петров</h2>
+                <blockquote class="tell__text">
                   <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
                 </blockquote>
               </section>
             </div>
           </div>
-          <input class="slider__switcher-input" type="radio" id="comment-slider-btn-1" name="comment-slider-toggle" checked>
-          <input class="slider__switcher-input" type="radio" id="comment-slider-btn-2" name="comment-slider-toggle">
-          <input class="slider__switcher-input" type="radio" id="comment-slider-btn-3" name="comment-slider-toggle">
-          <div class="slider__switcher-labels">
+          <div class="slider__switcher">
+            <input class="slider__switcher-input" type="radio" id="comment-slider-btn-1" name="comment-slider-toggle" checked>
             <label class="slider__switcher-label" for="comment-slider-btn-1"></label>
+            <input class="slider__switcher-input" type="radio" id="comment-slider-btn-2" name="comment-slider-toggle">
             <label class="slider__switcher-label" for="comment-slider-btn-2"></label>
+            <input class="slider__switcher-input" type="radio" id="comment-slider-btn-3" name="comment-slider-toggle">
             <label class="slider__switcher-label" for="comment-slider-btn-3"></label>
           </div>
         </div>
@@ -139,36 +140,38 @@
             <td class="versions-table__data-cell">-</td>
           </tr>
         </table>
-        <input class="slider__switcher-input" type="radio" id="versions-slider-btn-1" name="versions-slider-toggle" checked>
-        <input class="slider__switcher-input" type="radio" id="versions-slider-btn-2" name="versions-slider-toggle">
-        <input class="slider__switcher-input" type="radio" id="versions-slider-btn-3" name="versions-slider-toggle">
-        <div class="slider__switcher-labels">
+        <div class="slider__switcher">
+          <input class="slider__switcher-input" type="radio" id="versions-slider-btn-1" name="versions-slider-toggle" checked>
           <label class="slider__switcher-label" for="versions-slider-btn-1"></label>
+          <input class="slider__switcher-input" type="radio" id="versions-slider-btn-2" name="versions-slider-toggle">
           <label class="slider__switcher-label" for="versions-slider-btn-2"></label>
+          <input class="slider__switcher-input" type="radio" id="versions-slider-btn-3" name="versions-slider-toggle">
           <label class="slider__switcher-label" for="versions-slider-btn-3"></label>
         </div>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts">
-        <div class="page-footer__header">
-          <p>Остались вопросы? Свяжитесь с&nbsp;нами!</p>
-        </div>
-        <div class="page-footer__contact">
-          <span class="page-footer__contact-title">Звоните:</span>
-          <a class="page-footer__contact-address" href="tel:+78125556666"><nobr>+7 (812) 555-66-66</nobr></a>
-        </div>
-        <div class="page-footer__contact">
-          <span class="page-footer__contact-title">Пишите:</span>
-          <a class="page-footer__contact-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="page-footer__contact">
-          <span class="page-footer__contact-title">Приезжайте в&nbsp;гости:</span>
-          <span class="page-footer__contact-address">ул.&nbsp;Большая Конюшенная, 19/8</span>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <div class="page-footer__header">
+            <p>Остались вопросы? Свяжитесь с&nbsp;нами!</p>
+          </div>
+          <div class="page-footer__contact">
+            <span class="page-footer__contact-title">Звоните:</span>
+            <a class="page-footer__contact-address" href="tel:+78125556666"><nobr>+7 (812) 555-66-66</nobr></a>
+          </div>
+          <div class="page-footer__contact">
+            <span class="page-footer__contact-title">Пишите:</span>
+            <a class="page-footer__contact-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="page-footer__contact">
+            <span class="page-footer__contact-title">Приезжайте в&nbsp;гости:</span>
+            <span class="page-footer__contact-address">ул.&nbsp;Большая Конюшенная, 19/8</span>
+          </div>
         </div>
       </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3751722293583!2d30.320843466741838!3d59.936120064599706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f879780b7%3A0x267b6b7f4f614fb9!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1457108867986" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="map"><!--
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3751722293583!2d30.320843466741838!3d59.936120064599706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f879780b7%3A0x267b6b7f4f614fb9!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1457108867986" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       </div>
     </footer>
   </div>

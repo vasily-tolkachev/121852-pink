@@ -133,7 +133,6 @@
     width: 100%;
     height: 2px;
     background-color: $page-color-dark-blue;
-
   }
 
   &__toggle {
@@ -146,73 +145,118 @@
     height: 10px;
     border: 2px solid $pages-text-color-pink;
     border-radius: 50%;
-
-  }
-
-
-}
-
-.download-block {
-  @include gl2();
-
-  &__btn {
-    @include gl3();
-  }
-
-  &__text {
-    @include gl3();
   }
 }
+
+.transparent-btn {
+  @include reset-button-style;
+  @include reset-link-style
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 25px/27.5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: 3px solid $pages-text-color-pink;
+  color: $pages-text-color-pink;
+    // &:hover {
+    //   background-color: $pages-text-color-pink;
+    //   color: white;
+    // }
+
+    // &:active {
+    //   color: #e06989;
+    // }
+
+    // &:focus {
+    //   outline: none;
+    // }
+
+    &--gray {
+      color: $cansel-btn-color-dark-gray;
+      border-color: $cansel-btn-color-dark-gray;
+
+      // &:hover {
+      //   background-color: $cansel-btn-color-gray;
+      //   color: $cansel-btn-color-darkest-gray;
+      //   border-color: $cansel-btn-color-darkest-gray;
+      // }
+
+      // &:active {
+      //   background-color: $cansel-btn-color-darkest-gray;
+      //   color: $cansel-btn-color-dark-gray;
+      //   border-color: $cansel-btn-color-darkest-gray;
+      // }
+    }
+
+    &--white {
+      color: white;
+      border-color: white;
+    }
+  }
+
 
 .store-links {
-  @include clearfix;
-  @include gl3();
-}
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  margin: 30px auto;
 
-.store-link {
-  float: left;
-  @include gl4();
+  &__link {
+    width: 60px;
+    height: 60px;
+
+    &--apple {
+      background: url(../img/logo-apple.svg) 50% 50% no-repeat;
+    }
+
+    &--android {
+      background: url(../img/logo-android.svg) 50% 50% no-repeat;
+    }
+
+    &--microsoft {
+      background: url(../img/logo-microsoft.svg) 50% 50% no-repeat;
+    }
+  }
 }
 
 .offer-block {
-  @include gl2();
+  text-align: center;
+  font-size: 24px;
+  line-height: 26px;
 
-  &__caption {
-    @include gl3();
+  &__wrapper {
+    padding: 0 20px;
   }
 }
 
-.features-list {
-  @include gl2();
-
-}
-
-.features-item {
-  @include gl3();
+.tell {
+  padding-bottom: 20px;
+  text-align: center;
+  line-height: 24px;
 
   &__title {
-    @include gl4();
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
   }
 
-  &__description {
-    @include gl4();
-  }
-}
-
-.slider {
-  @include gl2();
-
-  &__slides {
-    @include gl3();
-  }
-
-  &__slide {
-    @include gl4();
+  &__text {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .map {
-  @include gl2();
+  height: 200px;
+  background:
+  url(../img/bg-triangle-white-footer.svg) no-repeat 50% 0,
+  url(../img/bg-map.png) no-repeat 0 0;
 }
-
-
