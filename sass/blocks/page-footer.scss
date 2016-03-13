@@ -1,6 +1,13 @@
 .page-footer {
   &__wrapper {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__copyright{
+    margin: 20px 0;
   }
 
   &__copyright-link {
@@ -9,22 +16,13 @@
     display: block;
     text-align: left;
     color: $pages-text-color;
-    width: 140px;
-    margin: 20px auto;
+    padding-right: 40px;
+    width: 90px;
+    min-height: 40px;
+    background: url(../img/logo-htmlacademy.svg) no-repeat 100% 0;
 
     span {
       display: none;
-    }
-
-    &:after {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 35px;
-      height: 35px;
-      top: 0;
-      right: 0;
-      background: url(../img/logo-htmlacademy.svg) no-repeat;
     }
   }
 
@@ -51,5 +49,14 @@
     @include reset-link-style;
     font-size: 24px;
     color: $form-label-color-pink;
+  }
+
+  @media #{$tablet-width} {
+
+    &__wrapper {
+       @include content-wrapper-tablet;
+       flex-direction: row;
+       justify-content: space-between;
+    }
   }
 }

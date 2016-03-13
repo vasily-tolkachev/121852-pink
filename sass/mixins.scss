@@ -56,6 +56,10 @@
   padding: 0;
 }
 
+@mixin content-wrapper-tablet {
+  padding: 0 40px;
+}
+
 @mixin reset-list-style {
   list-style: none;
   margin: 0;
@@ -67,8 +71,8 @@
 }
 
 @mixin inline-block($valign: top) {
-    display: inline-block;
-    vertical-align: $valign;
+  display: inline-block;
+  vertical-align: $valign;
 }
 
 @mixin reset-button-style {
@@ -77,3 +81,14 @@
   padding: 0;
   margin: 0;
 }
+
+// &__wrapper {
+//   @include content-wrapper-tablet;
+// }
+
+  // @media #{$tablet-width} {
+
+  //   &__wrapper {
+  //     @include content-wrapper-tablet;
+  //   }
+  // }
