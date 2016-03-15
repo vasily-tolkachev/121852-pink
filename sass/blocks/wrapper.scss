@@ -6,4 +6,8 @@
   @media #{$tablet-width} {
     width: 700px;
   }
+
+  @media #{$desktop-width} {
+    width: 1200px;
+  }
 }

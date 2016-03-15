@@ -1,26 +1,3 @@
-@mixin gl($color) {
-  padding: 6px;
-  margin: 10px;
-  display: block;
-  outline: 2px solid $color;
-}
-
-@mixin gl1() {
-  @include gl($gl1-color);
-}
-
-@mixin gl2() {
-  @include gl($gl2-color);
-}
-
-@mixin gl3() {
-  @include gl($gl3-color);
-}
-
-@mixin gl4() {
-  @include gl($gl4-color);
-}
-
 @mixin clearfix {
   &:after {
     content: "";

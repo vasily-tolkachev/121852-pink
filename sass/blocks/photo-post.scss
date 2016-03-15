@@ -1,21 +1,18 @@
 .photo-post {
-
+  position: relative;
+  padding-bottom: 40px;
   margin-bottom: 20px;
   line-height: 24px;
-
-  &__wrapper {
-    padding: 0 20px;
-  }
+  background-color: $pages-color-gray;
 
   &__image-link {
     @include reset-link-style;
     display: block;
-    position: relative;
+    background-color: #000;
   }
 
   &__content {
     padding: 13px;
-    background-color: $pages-color-gray;
   }
 
   &__title {
@@ -56,5 +53,16 @@
     line-height: 24px;
     text-transform: uppercase;
     font-weight: 700;
+  }
+
+  .like-field {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  @media #{$tablet-width} {
+    width: 300px;
+    box-sizing: border-box;
+    min-height: 300px;
   }
 }

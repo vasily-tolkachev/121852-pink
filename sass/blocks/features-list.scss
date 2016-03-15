@@ -7,5 +7,41 @@
   &__wrapper {
     padding: 0 20px;
   }
+
+  &__item {
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  &__text {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  @media #{$tablet-width} {
+    text-align: left;
+    background:
+    url(../img/iphone-screen-mobile.png) 40px 110% no-repeat,
+    $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
+    padding-bottom: 0;
+
+    &__wrapper {
+      padding-left: 50%;
+    }
+
+    &__item {
+      text-align: left;
+    }
+  }
 }
 

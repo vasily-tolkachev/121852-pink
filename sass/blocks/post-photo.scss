@@ -1,0 +1,77 @@
+.post-photo {
+  background-color: $pages-color-gray;
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__title {
+    @include pages-font-settings;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0 40px 0;
+  }
+
+  &__buttons {
+    padding: 40px 0 30px 0;
+  }
+
+  &__filter {
+    font-size: 0;
+  }
+
+  &__filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 40px auto 20px auto;
+  }
+
+  &__image {
+    background-color: #000;
+  }
+
+  &__filter-button {
+    @include reset-button-style;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+
+    &--filter1 {
+      background: transparent url(../img/icon-editor-crop.svg) 50% 50% no-repeat;
+    }
+
+    &--filter2 {
+      background: transparent url(../img/icon-editor-fill.svg) 50% 50% no-repeat;
+    }
+
+    &--filter3 {
+      background: transparent url(../img/icon-editor-contrast.svg) 50% 50% no-repeat;
+    }
+  }
+
+  @media #{$tablet-width} {
+    &__wrapper {
+      @include content-wrapper-tablet;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__right-container {
+      border: 1px solid #000;
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 10px;
+    }
+
+    &__left-container {
+      background-color: #000;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      width: 50%;
+      padding-right: 10px;
+    }
+  }
+}

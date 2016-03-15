@@ -1,6 +1,9 @@
 .page-footer {
   &__wrapper {
     padding: 0 20px;
+  }
+
+  &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,37 +29,21 @@
     }
   }
 
-  &__header {
-    font-size: 24px;
-  }
-
-  &__contacts {
-    text-align: center;
-  }
-
-  &__contact {
-    padding-bottom: 30px;
-  }
-
-  &__contact-title {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  &__contact-address {
-    display: block;
-    @include reset-link-style;
-    font-size: 24px;
-    color: $form-label-color-pink;
+  @media #{$mobile-width-only} {
+    &--index {
+      display: none;
+    }
   }
 
   @media #{$tablet-width} {
 
     &__wrapper {
-       @include content-wrapper-tablet;
-       flex-direction: row;
-       justify-content: space-between;
+      @include content-wrapper-tablet;
+    }
+
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }

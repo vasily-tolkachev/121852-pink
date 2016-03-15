@@ -230,62 +230,199 @@
   }
 
 
-.store-links {
-  font-size: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 210px;
-  margin: 30px auto;
+  .store-links {
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    margin: 30px auto;
 
-  &__link {
-    width: 60px;
-    height: 60px;
+    &__link {
+      width: 60px;
+      height: 60px;
 
-    &--apple {
-      background: url(../img/logo-apple.svg) 50% 50% no-repeat;
+      &--apple {
+        background: url(../img/logo-apple.svg) 50% 50% no-repeat;
+      }
+
+      &--android {
+        background: url(../img/logo-android.svg) 50% 50% no-repeat;
+      }
+
+      &--microsoft {
+        background: url(../img/logo-microsoft.svg) 50% 50% no-repeat;
+      }
+    }
+  }
+
+  .offer-block {
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+
+    &__wrapper {
+      padding: 0 20px;
     }
 
-    &--android {
-      background: url(../img/logo-android.svg) 50% 50% no-repeat;
+    @media #{$tablet-width} {
+      &__wrapper {
+        @include content-wrapper-tablet;
+      }
+
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 400;
+    }
+  }
+
+  .tell {
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 24px;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
     }
 
-    &--microsoft {
-      background: url(../img/logo-microsoft.svg) 50% 50% no-repeat;
+    &__text {
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .map {
+    position: relative;
+    height: 200px;
+  // background-color: red;
+  // background:
+  // url(../img/bg-triangle-white-footer.svg) no-repeat 50% 0,
+  // url(../img/bg-map.png) no-repeat 0 0;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image:
+    linear-gradient(
+      to top right,
+      transparent 50%,
+      white 50%),
+    linear-gradient(
+      to top left,
+      transparent 50%,
+      white 50%);
+
+    background-size: 50.1% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+  }
+
+  @media #{$tablet-width} {
+    height: 380px;
+    &::after {
+      height: 70px;
+    }
+  }
+
+  @media #{$desktop-width} {
+    height: 500px;
+    &::after {
+      height: 105px;
+    }
+  }
+
+
+}
+
+.research {
+  display: none;
+  padding: 60px 0;
+
+  @media #{$tablet-width} {
+    display: block;
+
+    &__wrapper {
+      @include content-wrapper-tablet;
+      padding-left: 50%;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__link {
+      color: $pages-text-color-pink;
     }
   }
 }
 
-.offer-block {
-  text-align: center;
-  font-size: 24px;
-  line-height: 26px;
-
-  &__wrapper {
-    padding: 0 20px;
-  }
-}
-
-.tell {
+.comment {
   padding-bottom: 20px;
   text-align: center;
-  line-height: 24px;
 
-  &__title {
+  &__author {
     margin: 0;
     padding: 0;
     font-size: 18px;
   }
 
+  &__author-information {
+    display: none;
+  }
+
   &__text {
-    font-size: 14px;
     padding: 0;
     margin: 0;
+    font-size: 14px;
+  }
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__author {
+      font-size: 20px;
+    }
+
+    &__author-information {
+      display: block;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
   }
 }
 
-.map {
-  height: 200px;
-  background:
-  url(../img/bg-triangle-white-footer.svg) no-repeat 50% 0,
-  url(../img/bg-map.png) no-repeat 0 0;
+.posts-list {
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  @media #{$tablet-width} {
+    &__wrapper {
+      @include content-wrapper-tablet;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      // align-content: stretch;
+    }
+  }
 }
