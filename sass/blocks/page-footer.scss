@@ -46,4 +46,10 @@
       justify-content: space-between;
     }
   }
+
+  @media #{$desktop-width} {
+    &__wrapper {
+      padding: 0 130px;
+    }
+  }
 }

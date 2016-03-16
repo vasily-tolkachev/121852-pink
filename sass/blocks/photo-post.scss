@@ -64,5 +64,34 @@
     width: 300px;
     box-sizing: border-box;
     min-height: 300px;
+
+    &--panorama {
+      width: 100%;
+      background-color: white;
+      padding-bottom: 0;
+
+      .photo-post__wrapper {
+        @include content-wrapper-tablet;
+      }
+
+      .like-field {
+        top: 0;
+        right: 0;
+      }
+
+      .photo-post__content {
+        position: relative;
+        //@include content-wrapper-tablet;
+        background-color: $pages-color-gray;
+      }
+    }
+
+    @media #{$desktop-width} {
+      &--panorama {
+        .photo-post__wrapper {
+          padding: 0 130px;
+        }
+      }
+    }
   }
 }

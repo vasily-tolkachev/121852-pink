@@ -1,15 +1,15 @@
 .page-header {
-  background-color: #283645;
+  background-color: $pages-text-color;
 
   &__wrapper {
-    @include clearfix;
     padding: 22px 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__toggle-menu {
     @include reset-button-style;
     font-size: 0;
-    float: right;
     width: 100px;
     height: 24px;
     background: url(../img/icon-menu-burger.svg) no-repeat 100% 0%;

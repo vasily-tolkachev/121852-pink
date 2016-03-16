@@ -43,5 +43,35 @@
       text-align: left;
     }
   }
+
+  @media #{$desktop-width} {
+    background:
+    $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
+
+    &__wrapper {
+      padding: 0 130px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      position: relative;
+      padding-top: 350px;
+      width: 270px;
+      text-align: center;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 300px;
+        background-color: red;
+        background: url(../img/iphone-screen-mobile.png) no-repeat 50% 50px;
+      }
+    }
+  }
 }
 
