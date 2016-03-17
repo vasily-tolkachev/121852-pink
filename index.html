@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="wrapper">
@@ -93,6 +94,9 @@
       <div class="slider  slider--comment-slider">
         <div class="slider__wrapper">
           <div class="slider__slides">
+            <input class="slider__switcher-input  slider__switcher-input--first" type="radio" id="comment-slider-btn-1" name="comment-slider-toggle" checked>
+            <input class="slider__switcher-input  slider__switcher-input--second" type="radio" id="comment-slider-btn-2" name="comment-slider-toggle">
+            <input class="slider__switcher-input  slider__switcher-input--third" type="radio" id="comment-slider-btn-3" name="comment-slider-toggle">
             <div class="slider__slide">
               <section class="comment">
                 <h2 class="comment__title">
@@ -100,7 +104,7 @@
                   <span class="comment__author-information">25 лет, водитель трамвая</span>
                 </h2>
                 <blockquote class="comment__text">
-                  <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+                  <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;1</p>
                 </blockquote>
               </section>
             </div>
@@ -111,7 +115,7 @@
                   <span class="comment__author-information">25 лет, водитель трамвая</span>
                 </h2>
                 <blockquote class="comment__text">
-                  <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+                  <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;2</p>
                 </blockquote>
               </section>
             </div>
@@ -122,19 +126,18 @@
                   <span class="comment__author-information">25 лет, водитель трамвая</span>
                 </h2>
                 <blockquote class="comment__text">
-                  <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+                  <p>&laquo;Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;3</p>
                 </blockquote>
               </section>
+            </div>
+            <div class="slider__switcher">
+              <label class="slider__switcher-label  slider__switcher-label--first" for="comment-slider-btn-1"></label>
+              <label class="slider__switcher-label  slider__switcher-label--second" for="comment-slider-btn-2"></label>
+              <label class="slider__switcher-label  slider__switcher-label--third" for="comment-slider-btn-3"></label>
             </div>
           </div>
-          <div class="slider__switcher">
-            <input class="slider__switcher-input" type="radio" id="comment-slider-btn-1" name="comment-slider-toggle" checked>
-            <label class="slider__switcher-label" for="comment-slider-btn-1"></label>
-            <input class="slider__switcher-input" type="radio" id="comment-slider-btn-2" name="comment-slider-toggle">
-            <label class="slider__switcher-label" for="comment-slider-btn-2"></label>
-            <input class="slider__switcher-input" type="radio" id="comment-slider-btn-3" name="comment-slider-toggle">
-            <label class="slider__switcher-label" for="comment-slider-btn-3"></label>
-          </div>
+          <button class="comment__toggle comment__toggle--prev" type="button">Предыдущий отзыв</button>
+          <button class="comment__toggle comment__toggle--next" type="button">Следующий отзыв</button>
         </div>
       </div>
       <div class="slider  slider--versions-slider">
@@ -176,13 +179,13 @@
           </tr>
         </table>
         <div class="slider__switcher">
-            <input class="slider__switcher-input" type="radio" id="table-slider-btn-1" name="table-slider-toggle" checked>
-            <label class="slider__switcher-label" for="table-slider-btn-1"></label>
-            <input class="slider__switcher-input" type="radio" id="table-slider-btn-2" name="table-slider-toggle">
-            <label class="slider__switcher-label" for="table-slider-btn-2"></label>
-            <input class="slider__switcher-input" type="radio" id="table-slider-btn-3" name="table-slider-toggle">
-            <label class="slider__switcher-label" for="table-slider-btn-3"></label>
-          </div>
+          <input class="slider__switcher-input" type="radio" id="table-slider-btn-1" name="table-slider-toggle" checked>
+          <label class="slider__switcher-label" for="table-slider-btn-1"></label>
+          <input class="slider__switcher-input" type="radio" id="table-slider-btn-2" name="table-slider-toggle">
+          <label class="slider__switcher-label" for="table-slider-btn-2"></label>
+          <input class="slider__switcher-input" type="radio" id="table-slider-btn-3" name="table-slider-toggle">
+          <label class="slider__switcher-label" for="table-slider-btn-3"></label>
+        </div>
       </div>
 
       <div class="contacts-block">

@@ -246,22 +246,56 @@
   }
 
   .offer-block {
-    text-align: center;
+    padding: 11px 0 4px 0;
     font-size: 24px;
-    line-height: 26px;
+    line-height: 29px;
+    font-weight: 300;
+    text-align: center;
 
     &__wrapper {
-      padding: 0 20px;
+      @include content-wrapper-mobile;
+    }
+
+    &__caption {
+       margin: 29px 0;
     }
 
     @media #{$tablet-width} {
+      padding: 49px 0 47px 0;
+      font-size: 40px;
+      line-height: 48px;
+
       &__wrapper {
         @include content-wrapper-tablet;
       }
 
-      font-size: 40px;
-      line-height: 50px;
-      font-weight: 400;
+      &__caption {
+        margin: 0 auto;
+
+        &:nth-child(2) {
+          width: 400px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    @media #{$desktop-width} {
+      padding: 67px 0 76px 0;
+      font-size: 50px;
+      line-height: 60px;
+
+      &__wrapper {
+        @include content-wrapper-desktop;
+      }
+
+      &__caption {
+
+        &:nth-child(2) {
+          width: 500px;
+        }
+      }
     }
   }
 
@@ -361,13 +395,19 @@
 }
 
 .comment {
-  padding-bottom: 20px;
   text-align: center;
+  padding-bottom: 20px;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+  }
 
   &__author {
     margin: 0;
     padding: 0;
     font-size: 18px;
+    line-height: 30px;
   }
 
   &__author-information {
@@ -375,9 +415,17 @@
   }
 
   &__text {
-    padding: 0;
     margin: 0;
     font-size: 14px;
+    line-height: 30px;
+
+    p {
+      margin: 13px 0;
+    }
+  }
+
+  &__toggle {
+    display: none;
   }
 
   @media #{$tablet-width} {

@@ -33,8 +33,16 @@
   padding: 0;
 }
 
+@mixin content-wrapper-mobile {
+  padding: 0 20px;
+}
+
 @mixin content-wrapper-tablet {
   padding: 0 40px;
+}
+
+@mixin content-wrapper-desktop {
+  padding: 0 130px;
 }
 
 @mixin reset-list-style {
