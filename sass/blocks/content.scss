@@ -363,6 +363,7 @@
 }
 
 .research {
+  background-color: violet;
   display: none;
   padding: 60px 0;
 
@@ -404,6 +405,7 @@
   }
 
   &__author {
+    display: block;
     margin: 0;
     padding: 0;
     font-size: 18px;
@@ -424,16 +426,16 @@
     }
   }
 
-  &__toggle {
-    display: none;
-  }
-
   @media #{$tablet-width} {
     display: flex;
     flex-direction: column-reverse;
+    padding-bottom: 34px;
 
     &__author {
+      display: block;
       font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 2px;
     }
 
     &__author-information {
@@ -445,6 +447,39 @@
 
     &__text {
       font-size: 18px;
+      margin-bottom: 22px;
+    }
+  }
+
+  @media #{$desktop-width} {
+    padding-top: 112px;
+    padding-bottom: 22px;
+    position: relative;
+
+    &__text {
+      span {
+        display: none;
+      }
+    }
+
+    &__author {
+      font-size: 24px;
+    }
+
+    &__author-information {
+      font-size: 18px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 65px;
+      border: 1px solid black;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+
     }
   }
 }
