@@ -1,8 +1,12 @@
 .page-header {
-  background-color: $pages-text-color;
+  background-color: rgba(0, 0, 0, 0.3);
+  //background-color: $pages-text-color;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -66px;
 
   &__wrapper {
-    padding: 22px 20px;
+    padding: 21px 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -10,9 +14,51 @@
   &__toggle-menu {
     @include reset-button-style;
     font-size: 0;
-    width: 100px;
+    width: 50px;
     height: 24px;
     background: url(../img/icon-menu-burger.svg) no-repeat 100% 0%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  &--open {
+    background-color: $pages-text-color;
+    margin-bottom: -326px;
+
+    .page-header__wrapper {
+      padding-bottom: 24px;
+      border-bottom: 1px solid black;
+    }
+
+    .main-nav {
+      display: block;
+    }
+
+    .page-header__toggle-menu {
+      background: url(../img/icon-menu-cross.svg) no-repeat 100% 0%;
+    }
+  }
+
+  @media #{$tablet-width} {
+    // outline: 10px solid violet;
+    margin-bottom: -110px;
+
+    &__wrapper {
+      padding: 27px 40px 42px 40px;
+    }
+
+    &__toggle-menu {
+      margin-top: 17px;
+    }
+
+    &--open {
+      margin-bottom: -365px;
+      .page-header__wrapper {
+        padding-bottom: 41px;
+      }
+    }
   }
 }
 

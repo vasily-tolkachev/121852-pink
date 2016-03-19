@@ -1,12 +1,17 @@
 .form {
 
   &__wrapper {
-    padding: 0 20px;
+    @include content-wrapper-mobile;
+  }
+
+  &__group-container {
+    display: flex;
+    flex-direction: column;
   }
 
   &__group {
     @include reset-fieldset-style;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
 
     &--grey {
       background-color: $form-group-color-grey;
@@ -17,9 +22,11 @@
     display: block;
     text-transform: uppercase;
     color: $form-label-color-pink;
+    font-size: 14px;
+    line-height: 18px;
     text-align: center;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 36px 25px;
     margin: 0 auto;
 
     &--hidden {
@@ -30,8 +37,14 @@
   &__label {
     display: block;
     padding: 0 0 0 23px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     color: $form-label-color-pink;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
   }
 
   &__field {
@@ -40,14 +53,19 @@
     box-sizing: border-box;
     width: 100%;
     border: 2px solid $form-field-color-gray;
-    border-radius: 3px;
-    margin: 0 0 10px 0;
-    padding: 15px 22px;
+    border-radius: 2px;
+    margin: 0;
+    padding: 14px 21px 15px 21px;
+  }
+
+  &__send-container {
+    display: flex;
+    flex-direction: column;
   }
 
   &__hint {
     display: block;
-    padding: 20px;
+    padding: 37px 20px 10px 20px;
     box-sizing: border-box;
     text-align: center;
     text-transform: uppercase;
@@ -64,13 +82,17 @@
   }
 
   &__entry-field {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
 
     &--switch {
+      margin-bottom: 37px;
+
       .form__label {
         @include form-field-font-settings;
         position: relative;
-        padding: 5px 0 5px 70px;
+        padding: 5px 0 5px 69px;
         cursor: pointer;
       }
 
@@ -91,7 +113,7 @@
         content: '';
         position: absolute;
         left: 10px;
-        top: 10px;
+        top: 11px;
         width: 30px;
         height: 30px;
         background: url(../img/icon-yes.svg) no-repeat;
@@ -107,6 +129,8 @@
     }
 
     &--radio {
+      margin-bottom: 29px;
+
       .form__label:before {
         border-radius: 50%;
       }
@@ -126,9 +150,70 @@
         overflow: hidden;
         resize: none;
         height: 200px;
+        padding: 14px 18px 15px 18px;
       }
     }
   }
+
+  &__group--achievements-group {
+    padding-bottom: 9px;
+  }
+
+  &__group--contact-group {
+    padding-top: 29px;
+    padding-bottom: 38px;
+  }
+
+  &__group--version-group {
+    padding-bottom: 8px
+  }
+
+  &__group--emotions-group {
+    .form__group-title {
+      padding: 57px 25px 17px 25px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media #{$tablet-width} {
 
@@ -136,20 +221,20 @@
       @include content-wrapper-tablet;
     }
 
-    &__group-container {
-      display: flex;
-      flex-direction: column;
-    }
+    // &__group-container {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
 
-    &__send-container {
-      display: flex;
-      align-items: baseline;
-    }
+    // &__send-container {
+    //   display: flex;
+    //   align-items: baseline;
+    // }
 
-    &__hint {
-      text-align: right;
-      padding: 0;
-    }
+    // &__hint {
+    //   text-align: right;
+    //   padding: 0;
+    // }
 
     &__group-title {
 
@@ -166,7 +251,7 @@
           display: block;
           position: relative;
           border: 2px solid $pages-color-dark-gray;
-          padding: 50px 60px 0 60px;
+          padding: 50px 58px 0 58px;
         }
 
         .form__group-title {
@@ -174,14 +259,15 @@
           display: inline-block;
           background-color: white;
           margin: 0 auto;
-          padding: 0 20px;
+          padding: 0 25px;
           z-index: 1;
         }
+
         .form__title-wrapper {
           display: block;
           text-align: center;
           position: absolute;
-          top: -16px;
+          top: -12px;
           left: 0;
           right: 0;
           background-color: white;
@@ -190,7 +276,7 @@
             content: '';
             display: block;
             position: relative;
-            top: -17px;
+            top: -10px;
             height: 2px;
             background-color: $pages-color-dark-gray;
             z-index: 0;
@@ -200,6 +286,7 @@
 
       &--name-group {
         order: 0;
+        padding-bottom: 52px;
 
         .form__label {
           padding: 0 20px 0 0;
@@ -207,8 +294,10 @@
 
         .form__entry-field {
           display: flex;
+          flex-direction: row;
           justify-content: space-between;
           align-items: baseline;
+          margin-top: 36px;
         }
       }
 
@@ -217,7 +306,21 @@
       }
 
       &--version-group {
+        padding-bottom: 38px;
         order: 1;
+
+        .form__label {
+          padding: 4px 0 4px 60px;
+          margin: 0;
+        }
+
+        .form__entry-field {
+          margin-bottom: 37px;
+        }
+
+        .form__fields {
+          padding-bottom: 18px;
+        }
       }
 
       &--emotions-group {
@@ -227,10 +330,20 @@
       &--contact-group {
         order: 2;
 
+        .form__border-wrapper {
+          padding-top: 38px;
+        }
+
+        .form__label {
+          margin-top: 10px;
+          padding-left: 20px;
+        }
+
         .form__entry-field {
           display: flex;
           flex-direction: column-reverse;
-          margin-bottom: 15px;
+          margin-top: 5px;
+          margin-bottom: 20px;
         }
 
         .form__field {
