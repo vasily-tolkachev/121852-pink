@@ -36,14 +36,23 @@
   }
 
   @media #{$tablet-width} {
+    padding-bottom: 10px;
 
     &__wrapper {
       @include content-wrapper-tablet;
     }
 
     &__container {
+      padding: 0;
+      min-height: 125px;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    &__copyright-link {
+      margin-top: 22px;
+      padding-right: 38px;
     }
   }
 
