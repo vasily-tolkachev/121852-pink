@@ -1,0 +1,21 @@
+.page-header {
+  background-color: #283645;
+
+  &__wrapper {
+    @include clearfix;
+    padding: 22px 20px;
+  }
+
+  &__toggle-menu {
+    @include reset-button-style;
+    font-size: 0;
+    float: right;
+    width: 100px;
+    height: 24px;
+    background: url(../img/icon-menu-burger.svg) no-repeat 100% 0%;
+  }
+}
+
+
+
+

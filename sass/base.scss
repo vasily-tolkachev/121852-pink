@@ -1,0 +1,27 @@
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+html,
+body {
+  @include pages-font-settings;
+  min-width: 320px;
+}
+
+input::-webkit-input-placeholder {
+  @include form-field-font-settings;
+}
+
+input::-moz-placeholder {
+  @include form-field-font-settings;
+}
+
+textarea::-webkit-input-placeholder {
+  @include form-field-font-settings;
+}
+
+textarea::-moz-placeholder {
+  @include form-field-font-settings;
+}

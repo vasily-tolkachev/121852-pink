@@ -1,0 +1,28 @@
+.main-nav {
+
+  &__list {
+    @include reset-list-style;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: block;
+    @include reset-link-style;
+    color: white;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
