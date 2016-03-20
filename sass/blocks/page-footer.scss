@@ -57,8 +57,15 @@
   }
 
   @media #{$desktop-width} {
+    padding-bottom: 46px;
+
     &__wrapper {
-      padding: 0 130px;
+      @include content-wrapper-desktop;
+    }
+
+    &__copyright-link {
+      font-size: 18px;
+      padding-right: 63px;
     }
   }
 }

@@ -1,6 +1,5 @@
 .page-header {
   background-color: rgba(0, 0, 0, 0.3);
-  //background-color: $pages-text-color;
   position: relative;
   z-index: 1;
   margin-bottom: -66px;
@@ -58,6 +57,39 @@
       .page-header__wrapper {
         padding-bottom: 41px;
       }
+    }
+  }
+
+  @media #{$desktop-width} {
+    padding: 20px 130px;
+
+    box-sizing: border-box;
+    min-height: 110px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-header__wrapper {
+      padding: 0;
+      border: none;
+    }
+
+    .main-nav {
+      display: block;
+    }
+
+    .logo {
+      padding-bottom: 17px;
+    }
+
+    &__toggle-menu {
+      display: none;
+    }
+
+    &--open {
+      background-color: rgba(0, 0, 0, 0.3);
+      margin-bottom: -110px;
     }
   }
 }

@@ -2,6 +2,8 @@
 
   &__list {
     @include reset-list-style;
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
@@ -19,5 +21,27 @@
     text-transform: uppercase;
     padding: 15px;
     text-align: center;
+  }
+
+  @media #{$desktop-width} {
+    display: block;
+    width: 621px;
+
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      border: none;
+    }
+
+    &__link {
+      padding: 0;
+      line-height: 18px;
+      font-weight: 400;
+      text-transform: none;
+      text-align: left;
+    }
   }
 }

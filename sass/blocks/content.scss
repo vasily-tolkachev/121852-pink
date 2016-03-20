@@ -58,6 +58,11 @@
     padding-top: 15px;
     padding-right: 16px;
   }
+
+  @media #{$desktop-width} {
+    padding-top: 21px;
+    padding-left: 28px;
+  }
 }
 
 .button {
@@ -75,6 +80,12 @@
   @media #{$tablet-width} {
     &--send-form {
       width: 94%;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &--send-form {
+      width: 47%;
     }
   }
 }

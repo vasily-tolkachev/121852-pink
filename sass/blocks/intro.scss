@@ -59,4 +59,9 @@
       }
     }
   }
+
+  @media #{$desktop-width} {
+    padding-top: 174px;
+    padding-bottom: 100px;
+  }
 }

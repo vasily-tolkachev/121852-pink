@@ -27,4 +27,18 @@
       }
     }
   }
+
+  @media #{$desktop-width} {
+    &__wrapper {
+      @include content-wrapper-desktop;
+    }
+
+    &__text {
+      padding: 74px 80px 17px 80px;
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
 }
