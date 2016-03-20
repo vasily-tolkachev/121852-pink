@@ -1,0 +1,79 @@
+@mixin gl($color) {
+  padding: 6px;
+  margin: 10px;
+  display: block;
+  outline: 2px solid $color;
+}
+
+@mixin gl1() {
+  @include gl($gl1-color);
+}
+
+@mixin gl2() {
+  @include gl($gl2-color);
+}
+
+@mixin gl3() {
+  @include gl($gl3-color);
+}
+
+@mixin gl4() {
+  @include gl($gl4-color);
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin reset-fieldset-style  {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+@mixin pages-font-settings  {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  color: $pages-text-color;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+@mixin form-field-font-settings  {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  color: $pages-text-color;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: none;
+}
+
+@mixin reset-form-field-style {
+  border: 0;
+  padding: 0;
+}
+
+@mixin reset-list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-link-style {
+  text-decoration: none;
+}
+
+@mixin inline-block($valign: top) {
+    display: inline-block;
+    vertical-align: $valign;
+}
+
+@mixin reset-button-style {
+  background: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}

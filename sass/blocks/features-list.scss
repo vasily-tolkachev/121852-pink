@@ -1,0 +1,11 @@
+.features-list {
+  background:
+  url(../img/iphone-screen-mobile.png) 50% 110% no-repeat,
+  $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
+  padding: 50px 0 300px 0;
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+}
+

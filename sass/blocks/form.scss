@@ -1,0 +1,126 @@
+.form {
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__group {
+    @include reset-fieldset-style;
+    margin-bottom: 20px;
+
+    &--grey {
+      background-color: $form-group-color-grey;
+    }
+  }
+
+  &__group-title {
+    display: block;
+    text-transform: uppercase;
+    color: $form-label-color-pink;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 25px;
+  }
+
+  &__label {
+    display: block;
+    padding-bottom: 0 0 0 23px;
+    text-transform: uppercase;
+    color: $form-label-color-pink;
+  }
+
+  &__field {
+    @include reset-form-field-style;
+    @include form-field-font-settings;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid $form-field-color-gray;
+    border-radius: 3px;
+    margin: 0 0 10px 0;
+    padding: 15px 22px;
+  }
+
+  &__hint {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      display: none;
+    }
+
+    &:before {
+      content: '*';
+      color: $form-label-color-pink;
+    }
+  }
+
+  &__entry-field {
+    &--switch {
+      margin-bottom: 43px;
+
+      .form__label {
+        @include form-field-font-settings;
+        position: relative;
+        padding: 5px 0 5px 70px;
+        cursor: pointer;
+      }
+
+      .form__label:before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        border: 2px solid $form-field-color-gray;
+        background-color: #fff;
+        width: 39px;
+        height: 39px;
+      }
+
+      .form__label:after {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background: url(../img/icon-yes.svg) no-repeat;
+        display: none;
+      }
+
+      .form__field {
+        display: none;
+        &:checked + .form__label::after{
+          display: block;
+        }
+      }
+    }
+
+    &--radio {
+      .form__label:before {
+        border-radius: 50%;
+      }
+
+      .form__label:after {
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        left: 12px;
+        top: 12px;
+        background: $form-label-color-pink;
+      }
+    }
+
+    &--textarea {
+      .form__field {
+        overflow: hidden;
+        resize: none;
+        height: 200px;
+      }
+    }
+  }
+}
