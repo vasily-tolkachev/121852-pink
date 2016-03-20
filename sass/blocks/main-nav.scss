@@ -2,10 +2,13 @@
 
   &__list {
     @include reset-list-style;
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
-
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000;
   }
 
   &__link {
@@ -18,11 +21,27 @@
     text-transform: uppercase;
     padding: 15px;
     text-align: center;
-    border-top: 1px solid #485461;
-    border-bottom: 1px solid #000;
   }
 
-  &--hidden {
-    display: none;
+  @media #{$desktop-width} {
+    display: block;
+    width: 621px;
+
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      border: none;
+    }
+
+    &__link {
+      padding: 0;
+      line-height: 18px;
+      font-weight: 400;
+      text-transform: none;
+      text-align: left;
+    }
   }
 }

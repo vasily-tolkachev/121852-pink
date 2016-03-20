@@ -1,55 +1,71 @@
 .page-footer {
+
   &__wrapper {
-    padding: 0 20px;
+    @include content-wrapper-mobile;
+  }
+
+  &__container {
+    padding: 45px 0;
+    min-height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__copyright-link {
     @include reset-link-style;
-    position: relative;
     display: block;
     text-align: left;
     color: $pages-text-color;
-    width: 140px;
-    margin: 20px auto;
+    padding-right: 40px;
+    width: 90px;
+    min-height: 34px;
+    background: url(../img/logo-htmlacademy.svg) no-repeat 100% 0;
+    background-size: 27px 34px;
 
     span {
       display: none;
     }
+  }
 
-    &:after {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 35px;
-      height: 35px;
-      top: 0;
-      right: 0;
-      background: url(../img/logo-htmlacademy.svg) no-repeat;
+  @media #{$mobile-width-only} {
+    &--index {
+      display: none;
     }
   }
 
-  &__header {
-    font-size: 24px;
+  @media #{$tablet-width} {
+    padding-bottom: 10px;
+
+    &__wrapper {
+      @include content-wrapper-tablet;
+    }
+
+    &__container {
+      padding: 0;
+      min-height: 125px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__copyright-link {
+      margin-top: 22px;
+      padding-right: 38px;
+    }
   }
 
-  &__contacts {
-    text-align: center;
-  }
+  @media #{$desktop-width} {
+    padding-bottom: 46px;
 
-  &__contact {
-    padding-bottom: 30px;
-  }
+    &__wrapper {
+      @include content-wrapper-desktop;
+    }
 
-  &__contact-title {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  &__contact-address {
-    display: block;
-    @include reset-link-style;
-    font-size: 24px;
-    color: $form-label-color-pink;
+    &__copyright-link {
+      font-size: 18px;
+      padding-right: 63px;
+    }
   }
 }

@@ -1,32 +1,97 @@
 .versions-table {
-  position: absolute;
-  left: 25px;
-  top: 80px;
-  text-transform: uppercase;
-
-  &__header-cell {
-    color: white;
-    padding: 15px 80px;
-    background-color: $page-color-dark-blue;
-
-    span:first-child {
-      display: block;
-      font-size: 18px;
-    }
-
-    span:last-child {
-      display: block;
-      font-size: 24px;
-    }
-  }
-
-  &__data-cell {
-    background-color: white;
-    border: 2px solid $pages-color-dark-gray;
-    padding: 15px 20px;
-
-    &:nth-child(2) {
-      display: none;
-    }
-  }
 }
+  // position: absolute;
+  // left: 25px;
+  // top: 80px;
+
+  // &__header-cell {
+  //   color: white;
+  //   padding: 15px 80px;
+  //   background-color: $page-color-dark-blue;
+
+  //   span:first-child {
+  //     display: block;
+  //     font-size: 18px;
+  //   }
+
+  //   span:last-child {
+  //     display: block;
+  //     font-size: 24px;
+  //   }
+  // }
+
+  // &__data-cell {
+  //   background-color: white;
+  //   border: 2px solid $pages-color-dark-gray;
+  //   padding: 15px 20px;
+  // }
+
+
+
+  // th {
+  //   display: block;
+  //   width: 100%;
+  // }
+
+  // tr {
+  //   display: flex;
+  //   box-sizing: border-box;
+  //   width: 100%;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
+
+  // td {
+  //   display: block;
+  //   width: 100%;
+  // }
+
+  // th:nth-child(1),
+  // td:nth-child(1){
+  //   order: 0;
+  // }
+
+  // th:nth-child(2),
+  // td:nth-child(2){
+  //   order: 10;
+  // }
+
+  // th:nth-child(3),
+  // td:nth-child(3){
+  //   order: 20;
+  // }
+
+  // th:nth-child(4),
+  // td:nth-child(4){
+  //   order: 30;
+  // }
+
+  // tbody {
+  //   display: block;
+  //   width: 500px;
+  //   // margin: 0;
+  //   // padding: 0;
+  //  }
+
+//}
+
+// #versions-slider-btn-1:checked ~ table tbody tr {
+
+//     border: #000;
+
+// }
+
+// #versions-slider-btn-1:checked ~ table tbody th:nth-child(1),
+// #versions-slider-btn-1:checked ~ table tbody td:nth-child(1){
+//   order: 5;
+// }
+
+// #versions-slider-btn-2:checked ~ table tbody th:nth-child(1),
+// #versions-slider-btn-2:checked ~ table tbody td:nth-child(1){
+//   order: 15;
+// }
+
+// #versions-slider-btn-3:checked ~ table tbody th:nth-child(1),
+// #versions-slider-btn-3:checked ~ table tbody td:nth-child(1){
+//   order: 25;
+// }

@@ -1,0 +1,151 @@
+.post-photo {
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__left-container {
+    background-color: $pages-color-gray;
+  }
+
+  &__right-container {
+    background-color: $pages-color-gray;
+  }
+
+
+  &__title {
+    @include pages-font-settings;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding: 20px 0 40px 0;
+  }
+
+  &__buttons {
+    padding: 0;
+  }
+
+  &__filter {
+    font-size: 0;
+  }
+
+  &__filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 40px auto 0 auto;
+  }
+
+  &__filter-button {
+    @include reset-button-style;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+
+    &--filter1 {
+      background: transparent url(../img/icon-editor-crop.svg) 50% 50% no-repeat;
+    }
+
+    &--filter2 {
+      background: transparent url(../img/icon-editor-fill.svg) 50% 50% no-repeat;
+    }
+
+    &--filter3 {
+      background: transparent url(../img/icon-editor-contrast.svg) 50% 50% no-repeat;
+    }
+  }
+
+  &__filter-controller {
+    position: relative;
+    padding: 20px;
+    padding-left: 55px;
+    border-bottom: 1px solid $cansel-btn-color-dark-gray;
+
+    &::after {
+      border: 1px solid #000;
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &--filter1::after {
+      background: url(../img/icon-editor-crop.svg) no-repeat 50% 50%;
+      background-size: 25px 25px;
+    }
+
+    &--filter2::after {
+      background: url(../img/icon-editor-fill.svg) no-repeat 50% 50%;
+      background-size: 25px 25px;
+    }
+
+    &--filter3::after {
+      background: url(../img/icon-editor-contrast.svg) no-repeat 50% 50%;
+      background-size: 16px 16px;
+    }
+  }
+
+  @media #{$mobile-width-only} {
+    background-color: $pages-color-gray;
+    &__filter-controller {
+      padding-left: 20px;
+
+      &:not(.post-photo__filter-controller--active) {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @media #{$tablet-width} {
+    &__wrapper {
+      @include content-wrapper-tablet;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__right-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      border: 1px solid #000;
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    &__left-container {
+      background-color: #000;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    &__filter-buttons {
+      display: none;
+    }
+
+  }
+
+  @media #{$desktop-width} {
+    &__wrapper {
+      padding: 0 130px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+
+      .transparent-btn {
+        box-sizing: border-box;
+        width: 185px;
+      }
+    }
+  }
+}
