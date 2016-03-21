@@ -111,11 +111,17 @@
                 </div>
                 <div class="form__fields">
                   <div class="form__entry-field">
-                    <label class="form__label" for="phone-number">Номерок телефончика</label>
+                    <label class="form__label" for="phone-number">
+                      <span>Номерок телефончика</span>
+                      <span>Номер телефона</span>
+                    </label>
                     <input class="form__field" type="tel" id="phone-number" placeholder="Номер, пожалуйста" name="phone-number">
                   </div>
                   <div class="form__entry-field">
-                    <label class="form__label" for="email">Адресок почты</label>
+                    <label class="form__label" for="email">
+                      <span>Адресок почты</span>
+                      <span>Адрес почты</span>
+                    </label>
                     <input class="form__field" type="email" id="email" placeholder="E-mail, пожалуйста" name="email">
                   </div>
                 </div>
@@ -163,7 +169,7 @@
         <div class="form__wrapper">
           <div class="form__send-container">
             <input class="button  button--send-form" type="submit" value="Отправить форму">
-            <span class="form__hint"><span>*</span> &mdash;&nbsp;обязательные поля</span>
+            <span class="form__hint"><span>*</span> &mdash;&nbsp;обязательные <span>для заполнения</span> поля</span>
           </div>
         </div>
       </form>
@@ -185,7 +191,7 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup  popup--wrong">
       <div class="popup__wrapper">
         <div class="popup__title">
           <nobr>Что-то</nobr> пошло не&nbsp;так!
@@ -205,7 +211,7 @@
           Ваша заявка отправлена!
         </div>
         <div class="popup__description">
-          <p>Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <p>Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В ближайшее время мы рассмотрим ее и<br> оповестим вас.</p>
         </div>
       </div>
       <div class="popup__btn-wrapper">
