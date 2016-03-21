@@ -92,14 +92,18 @@
 
 .popup {
   display: none;
+  box-sizing: border-box;
+  width: 320px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  border: 1px solid #000;
-  padding: 20px 0 0 0;
+  // outline: 1px solid violet;
+  padding: 40px 0 0 0;
+  background-color: #fff;
+  box-shadow: 0px 7px 30px -5px rgba(0,1,1,0.3);
 
   &__wrapper {
-    padding: 0 20px;
+    @include content-wrapper-mobile;
   }
 
   &__title {
@@ -108,13 +112,31 @@
   }
 
   &__btn-wrapper {
-    padding: 30px 20px 50px 20px;
+    padding: 24px 20px 51px 20px;
+  }
+
+  &__description {
+    margin-top: 26px;
+    // margin-bottom: 5px;
+  }
+
+  &--wrong {
+    position: absolute;
+    top: 1166px;
   }
 
   &--success {
+    position: absolute;
+    top: 1640px;
+
+    .popup__description {
+      padding: 0 7px;
+    }
+
     .popup__btn-wrapper {
       background-color: $pages-color-gray;
-      padding: 50px 20px;
+      margin-top: 30px;
+      padding: 49px 20px 52px 20px;
     }
   }
 

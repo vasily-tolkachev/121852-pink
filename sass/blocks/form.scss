@@ -16,6 +16,14 @@
     &--grey {
       background-color: $form-group-color-grey;
     }
+
+    &--contact-group {
+      .form__label {
+        span:last-of-type {
+          display: none;
+        }
+      }
+    }
   }
 
   &__group-title {
@@ -181,12 +189,6 @@
       @include content-wrapper-tablet;
     }
 
-    // &__group-container {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
-
-
     &__group-title {
 
       &--hidden {
@@ -309,6 +311,15 @@
         .form__label {
           margin-top: 10px;
           padding-left: 20px;
+
+          span:first-of-type {
+            display: none;
+          }
+
+          span:last-of-type {
+            display: inline-block;
+          }
+
         }
 
         .form__entry-field {
@@ -352,6 +363,12 @@
       padding-top: 35px;
     }
 
+    &__hint {
+      span:last-of-type {
+        display: inline-block;
+      }
+    }
+
     &__group {
       width: 100%;
 
@@ -388,15 +405,12 @@
 
         .form__entry-field {
           width: 375px;
+          margin-bottom: 8px;
         }
 
         .form__border-wrapper {
           padding: 35px 58px 0 58px;
           // padding: 50px 58px 0 58px;
-        }
-
-        .form__entry-field {
-          margin-bottom: 8px;
         }
       }
 
