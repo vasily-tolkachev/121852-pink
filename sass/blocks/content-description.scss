@@ -13,6 +13,13 @@
     }
   }
 
+  &--photo-page {
+    margin-bottom: 15px;
+    .content-description__wrapper {
+      padding: 0 35px;
+    }
+  }
+
   @media #{$tablet-width} {
     &__wrapper {
       @include content-wrapper-tablet;

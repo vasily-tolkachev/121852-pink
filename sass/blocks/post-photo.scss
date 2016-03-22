@@ -1,9 +1,7 @@
 .post-photo {
-  &__wrapper {
-    padding: 0 20px;
-  }
 
   &__left-container {
+    padding: 20px 20px 0 20px;
     background-color: $pages-color-gray;
   }
 
@@ -11,29 +9,30 @@
     background-color: $pages-color-gray;
   }
 
-
   &__title {
     @include pages-font-settings;
     background-color: white;
-    padding: 0;
     margin: 0;
     text-align: center;
-    padding: 20px 0 40px 0;
+    padding: 23px 0 42px 0;
   }
 
-  &__buttons {
-    padding: 0;
+  &__image {
+    width: 280px;
+    height: 374px;
   }
 
   &__filter {
+
     font-size: 0;
   }
 
   &__filter-buttons {
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    width: 220px;
-    margin: 40px auto 0 auto;
+    width: 209px;
+    margin: 40px auto 15px auto;
   }
 
   &__filter-button {
@@ -57,8 +56,7 @@
 
   &__filter-controller {
     position: relative;
-    padding: 20px;
-    padding-left: 55px;
+    padding: 20px 40px 34px 40px;
     border-bottom: 1px solid $cansel-btn-color-dark-gray;
 
     &::after {
@@ -88,10 +86,13 @@
     }
   }
 
+  &__buttons {
+    padding: 38px 20px 31px 20px;
+  }
+
   @media #{$mobile-width-only} {
     background-color: $pages-color-gray;
     &__filter-controller {
-      padding-left: 20px;
 
       &:not(.post-photo__filter-controller--active) {
         display: none;

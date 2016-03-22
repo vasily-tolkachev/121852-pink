@@ -4,19 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="wrapper">
-    <header class="page-header  page-header--open">
+    <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo  logo--header">Pink</a>
+        <a class="logo  logo--header" href="/index.html">Pink</a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link" href="/index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Фотографии</a>
@@ -29,21 +30,22 @@
           </li>
         </ul>
       </nav>
-
     </header>
+
     <main class="page-main">
-      <div class="intro">
+      <div class="intro  intro--photo-page">
         <div class="intro__wrapper">
           <h1 class="intro__text">Фотографии пользователей</h1>
         </div>
       </div>
-      <div class="content-description">
+      <div class="content-description  content-description--photo-page">
         <div class="content-description__wrapper">
           <div class="content-description__text">
             <p>Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</p>
           </div>
         </div>
       </div>
+
       <section class="photo-post  photo-post--panorama">
         <a class="photo-post__image-link" href="#">
           <img class="photo-post__image  photo-post__image--panorama" src="img/panorama-mobile.jpg" alt="" width="320" height="135">
@@ -56,12 +58,14 @@
               <span class="photo-post__publication-time">(5&nbsp;минут назад)</span>
             </h2>
             <div class="photo-post__post-text">
-              <p>Прыгать или нет? Напишите в&nbsp;коментарии свой совет и&nbsp;смотрите прямую транслацию в&nbsp;перископе, задавайте свои вопросы!</p>
+              <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в&nbsp;перископе, задавайте свои вопросы!</p>
             </div>
             <div class="like-field">
               <button class="like-field__btn">Нравится</button>
-              <span class="like-field__label">Нравится:</span>
-              <span class="like-field__count">215</span>
+              <div class="like-field__like-count">
+                <span class="like-field__label">Нравится:</span>
+                <span class="like-field__count">215</span>
+              </div>
             </div>
           </div>
         </div>
@@ -82,8 +86,10 @@
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
-                <span class="like-field__label">Нравится:</span>
-                <span class="like-field__count">356</span>
+                <div class="like-field__like-count">
+                  <span class="like-field__label">Нравится:</span>
+                  <span class="like-field__count">356</span>
+                </div>
               </div>
             </div>
           </section>
@@ -101,8 +107,10 @@
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
-                <span class="like-field__label">Нравится:</span>
-                <span class="like-field__count">666</span>
+                <div class="like-field__like-count">
+                  <span class="like-field__label">Нравится:</span>
+                  <span class="like-field__count">666</span>
+                </div>
               </div>
             </div>
           </section>
@@ -116,12 +124,14 @@
                 <span class="photo-post__publication-time">(20 часов назад)</span>
               </h2>
               <div class="photo-post__post-text">
-                <p>Здесь могла быть ваша цитата о&nbsp;высоком и&nbsp;вечном.</p>
+                <p>Здесь могла быть ваша цитата о высоком и&nbsp;вечном.</p>
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
-                <span class="like-field__label">Нравится:</span>
-                <span class="like-field__count">215</span>
+                <div class="like-field__like-count">
+                  <span class="like-field__label">Нравится:</span>
+                  <span class="like-field__count">215</span>
+                </div>
               </div>
             </div>
           </section>
@@ -139,8 +149,10 @@
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
-                <span class="like-field__label">Нравится:</span>
-                <span class="like-field__count">4</span>
+                <div class="like-field__like-count">
+                  <span class="like-field__label">Нравится:</span>
+                  <span class="like-field__count">4</span>
+                </div>
               </div>
             </div>
           </section>
@@ -158,78 +170,82 @@
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
-                <span class="like-field__label">Нравится:</span>
-                <span class="like-field__count">150</span>
-              </div>
-            </div>
-          </section>
-          <section class="photo-post">
-            <a class="photo-post__image-link" href="#">
-              <img class="photo-post__image" src="img/photo-6-mobile.jpg" alt="" width="280" height="180">
-            </a>
-            <div class="photo-post__content">
-              <h2 class="photo-post__title">
-               <span class="photo-post__author-name">Надежда</span>
-               <span class="photo-post__publication-time">(45 часов назад)</span>
-             </h2>
-             <div class="photo-post__post-text">
-               <p>Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
+                <div class="like-field__like-count">
+                 <span class="like-field__label">Нравится:</span>
+                 <span class="like-field__count">150</span>
+               </div>
              </div>
-             <div class="like-field">
-               <button class="like-field__btn">Нравится</button>
+           </div>
+         </section>
+         <section class="photo-post">
+          <a class="photo-post__image-link" href="#">
+            <img class="photo-post__image" src="img/photo-6-mobile.jpg" alt="" width="280" height="180">
+          </a>
+          <div class="photo-post__content">
+            <h2 class="photo-post__title">
+             <span class="photo-post__author-name">Надежда</span>
+             <span class="photo-post__publication-time">(45 часов назад)</span>
+           </h2>
+           <div class="photo-post__post-text">
+             <p>Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
+           </div>
+           <div class="like-field">
+             <button class="like-field__btn">Нравится</button>
+             <div class="like-field__like-count">
                <span class="like-field__label">Нравится:</span>
                <span class="like-field__count">2560</span>
              </div>
            </div>
-         </section>
-       </div>
+         </div>
+       </section>
      </div>
-     <form class="post-photo" action="/echo" enctype="multipart/form-data" method="post">
-      <h2 class="post-photo__title">Затмите их&nbsp;всех!<br> Выкладывайте все, что накопилось в&nbsp;телефоне!</h2>
-      <div class="post-photo__wrapper">
-        <div class="post-photo__left-container">
-          <img class="post-photo__image" src="img/photo-7-mobile.jpg" alt="Ваша фотография" width="280" height="375">
-        </div>
-        <div class="post-photo__right-container">
-          <div class="post-photo__filter">
-            <div class="post-photo__filter-buttons">
-              <button class="post-photo__filter-button  post-photo__filter-button--filter1 filter-block__filter1--active">Фильтр1</button>
-              <button class="post-photo__filter-button  post-photo__filter-button--filter2">Фильтр2</button>
-              <button class="post-photo__filter-button  post-photo__filter-button--filter3">Фильтр3</button>
-            </div>
+   </div>
+   <form class="post-photo" action="/echo" enctype="multipart/form-data" method="post">
+    <h2 class="post-photo__title">Затмите их&nbsp;всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
+    <div class="post-photo__wrapper">
+      <div class="post-photo__left-container">
+        <img class="post-photo__image" src="img/photo-7-mobile.jpg" alt="Ваша фотография" width="280" height="375">
+      </div>
+      <div class="post-photo__right-container">
+        <div class="post-photo__filter">
+          <div class="post-photo__filter-buttons">
+            <button class="post-photo__filter-button  post-photo__filter-button--filter1 filter-block__filter1--active">Фильтр1</button>
+            <button class="post-photo__filter-button  post-photo__filter-button--filter2">Фильтр2</button>
+            <button class="post-photo__filter-button  post-photo__filter-button--filter3">Фильтр3</button>
+          </div>
 
-            <div class="post-photo__filter-controllers">
-              <div class="post-photo__filter-controller  post-photo__filter-controller--active  post-photo__filter-controller--filter1">
-                <div class="range-controls">
-                  <div class="range-controls__scale"></div>
-                  <div class="range-controls__toggle"></div>
-                </div>
+          <div class="post-photo__filter-controllers">
+            <div class="post-photo__filter-controller  post-photo__filter-controller--active  post-photo__filter-controller--filter1">
+              <div class="range-controls">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle"></div>
               </div>
-              <div class="post-photo__filter-controller  post-photo__filter-controller--filter2">
-                <div class="range-controls">
-                  <div class="range-controls__scale"></div>
-                  <div class="range-controls__toggle"></div>
-                </div>
+            </div>
+            <div class="post-photo__filter-controller  post-photo__filter-controller--filter2">
+              <div class="range-controls">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle"></div>
               </div>
-              <div class="post-photo__filter-controller  post-photo__filter-controller--filter3">
-                <div class="range-controls">
-                  <div class="range-controls__scale"></div>
-                  <div class="range-controls__toggle"></div>
-                </div>
+            </div>
+            <div class="post-photo__filter-controller  post-photo__filter-controller--filter3">
+              <div class="range-controls">
+                <div class="range-controls__scale"></div>
+                <div class="range-controls__toggle"></div>
               </div>
             </div>
           </div>
-          <div class="post-photo__buttons">
-           <input class="transparent-btn" type="submit" value="Запостить">
-           <button class="transparent-btn  transparent-btn--gray" >Отмена</button>
-         </div>
+        </div>
+        <div class="post-photo__buttons">
+         <input class="transparent-btn" type="submit" value="Запостить">
+         <button class="transparent-btn  transparent-btn--gray" >Отмена</button>
        </div>
      </div>
-   </form>
+   </div>
+ </form>
 
- </main>
+</main>
 
- <footer class="page-footer">
+<footer class="page-footer  page-footer--photo-page">
   <div class="page-footer__wrapper">
     <div class="page-footer__container">
       <a class="logo  logo--extended">Pink</a>

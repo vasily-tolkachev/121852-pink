@@ -23,6 +23,10 @@
     #000 url(../img/bg-back-mobile.jpg) no-repeat;
   }
 
+  &--photo-page {
+    padding-bottom: 83px;
+  }
+
   @media #{$mobile-width-only} {
     &--main {
       padding-top: 300px;
