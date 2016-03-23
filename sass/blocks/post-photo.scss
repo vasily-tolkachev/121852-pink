@@ -150,7 +150,6 @@
     }
 
     &__filter-controllers {
-
       z-index: 0;
       width: 275px;
     }
@@ -230,17 +229,92 @@
   }
 
   @media #{$desktop-width} {
+    margin-top: 5px;
+    margin-bottom: 61px;
+
     &__wrapper {
-      padding: 0 130px;
+      @include content-wrapper-desktop;
+      background-color: white;
+    }
+
+    &__title {
+      padding: 0;
+      margin-bottom: 66px;
+    }
+
+    &__left-container {
+      padding: 57px 0 57px 80px;
+    }
+
+    &__right-container {
+      padding-left: 0;
+      padding-right: 60px;
+      padding-top: 57px;
+      padding-bottom: 57px;
     }
 
     &__buttons {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: row;
+      min-height: auto;
+      padding: 0;
 
       .transparent-btn {
         box-sizing: border-box;
-        width: 185px;
+        width: 182px;
+      }
+    }
+
+    &__filter-controllers {
+      width: 100%;
+    }
+
+    &__filter-controller {
+      padding: 19px 30px 34px 91px;
+
+      &--first {
+        .range-controls {
+          &__toggle {
+            left: 24.75%;
+          }
+        }
+      }
+
+      &--second {
+        .range-controls {
+          &__toggle {
+            left: 86%;
+          }
+        }
+      }
+
+      &--third {
+        .range-controls {
+          &__toggle {
+            left: 55.75%;
+          }
+        }
+      }
+    }
+
+    &__filter-button {
+      width: 60px;
+      height: 60px;
+      margin-top: -4px;
+      margin-bottom: 13px;
+
+      &--filter1 {
+        background-size: 48px 48px;
+        background-position: -2px 0;
+      }
+
+      &--filter2 {
+        background-size: 48px 48px;
+        background-position: 0 53%;
+      }
+
+      &--filter3 {
+        background-size: 32px 32px;
+        background-position: 22% 47%;
       }
     }
   }

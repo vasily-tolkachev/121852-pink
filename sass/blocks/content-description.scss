@@ -15,9 +15,11 @@
 
   &--photo-page {
     margin-bottom: 15px;
-    .content-description__wrapper {
-      padding: 0 35px;
-    }
+    padding-left: 15px;
+    padding-right: 15px;
+    // .content-description__wrapper {
+    //   padding: 0 35px;
+    // }
   }
 
   @media #{$tablet-width} {
@@ -49,6 +51,14 @@
 
       span {
         display: inline-block;
+      }
+    }
+
+    &--photo-page {
+      margin-bottom: 53px;
+
+      .content-description__text {
+        padding: 74px 150px 17px 150px;
       }
     }
   }

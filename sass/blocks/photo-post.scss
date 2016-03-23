@@ -133,4 +133,36 @@
       }
     }
   }
+
+  @media #{$desktop-width} {
+    margin-bottom: 54px;
+
+    &__image {
+      width: 300px;
+      height: 400px;
+    }
+
+    &--panorama {
+      margin-bottom: 49px;
+
+      .photo-post__wrapper {
+        @include content-wrapper-desktop;
+      }
+
+      .photo-post__content {
+        min-height: auto;
+        padding-right: 31px;
+      }
+
+      .photo-post__image {
+        width: 1200px;
+        height: 506px;
+      }
+
+      .photo-post__panorama-label {
+        left: 931px;
+        top: 54px;
+      }
+    }
+  }
 }
