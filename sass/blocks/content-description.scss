@@ -33,6 +33,10 @@
         display: block;
       }
     }
+
+    &--photo-page {
+      margin-bottom: 41px;
+    }
   }
 
   @media #{$desktop-width} {

@@ -10,7 +10,7 @@
 	<div class="wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo  logo--header" href="/index.html">Pink</a>
+        <a class="logo" href="/index.html">Pink</a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
@@ -48,7 +48,10 @@
 
       <section class="photo-post  photo-post--panorama">
         <a class="photo-post__image-link" href="#">
-          <img class="photo-post__image  photo-post__image--panorama" src="img/panorama-mobile.jpg" alt="" width="320" height="135">
+          <picture>
+            <source media = "(min-width: 700px)" srcset = "img/panorama-tablet.jpg">
+            <img class="photo-post__image  photo-post__image--panorama" src="img/panorama-mobile.jpg" alt="" width="320" height="135">
+          </picture>
           <span class="photo-post__panorama-label">Панорама дня</span>
         </a>
         <div class="photo-post__wrapper">
@@ -74,15 +77,20 @@
         <div class="posts-list__wrapper">
           <section class="photo-post">
             <a class="photo-post__image-link" href="#">
-              <img class="photo-post__image" src="img/photo-1-mobile.jpg" alt="" width="280" height="180">
+              <picture>
+                <source media = "(min-width: 700px)" srcset = "img/photo-1-tablet.jpg">
+                <img class="photo-post__image" src="img/photo-1-mobile.jpg" alt="" width="280" height="180">
+              </picture>
             </a>
             <div class="photo-post__content">
-              <h2 class="photo-post__title">
-                <span class="photo-post__author-name">Левон</span>
-                <span class="photo-post__publication-time">(5 часов назад)</span>
-              </h2>
-              <div class="photo-post__post-text">
-                <p>Вчера он&nbsp;на&nbsp;луну летал, сегодня в руки к&nbsp;нам попал.</p>
+              <div class="photo-post__text-wrapper">
+                <h2 class="photo-post__title">
+                  <span class="photo-post__author-name">Левон</span>
+                  <span class="photo-post__publication-time">(5 часов назад)</span>
+                </h2>
+                <div class="photo-post__post-text">
+                  <p>Вчера он&nbsp;на&nbsp;луну летал, сегодня в руки к&nbsp;нам попал.</p>
+                </div>
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
@@ -95,15 +103,20 @@
           </section>
           <section class="photo-post">
             <a class="photo-post__image-link" href="#">
-              <img class="photo-post__image" src="img/photo-2-mobile.jpg" alt="" width="280" height="180">
+              <picture>
+                <source media = "(min-width: 700px)" srcset = "img/photo-2-tablet.jpg">
+                <img class="photo-post__image" src="img/photo-2-mobile.jpg" alt="" width="280" height="180">
+              </picture>
             </a>
             <div class="photo-post__content">
-              <h2 class="photo-post__title">
-                <span class="photo-post__author-name">Антон</span>
-                <span class="photo-post__publication-time">(12 часов назад)</span>
-              </h2>
-              <div class="photo-post__post-text">
-                <p>Соседи будут рады!</p>
+              <div class="photo-post__text-wrapper">
+                <h2 class="photo-post__title">
+                  <span class="photo-post__author-name">Антон</span>
+                  <span class="photo-post__publication-time">(12 часов назад)</span>
+                </h2>
+                <div class="photo-post__post-text">
+                  <p>Соседи будут рады!</p>
+                </div>
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
@@ -116,15 +129,20 @@
           </section>
           <section class="photo-post">
             <a class="photo-post__image-link" href="#">
-              <img class="photo-post__image" src="img/photo-3-mobile.jpg" alt="" width="280" height="180">
+              <picture>
+                <source media = "(min-width: 700px)" srcset = "img/photo-3-tablet.jpg">
+                <img class="photo-post__image" src="img/photo-3-mobile.jpg" alt="" width="280" height="180">
+              </picture>
             </a>
             <div class="photo-post__content">
-              <h2 class="photo-post__title">
-                <span class="photo-post__author-name">Борис</span>
-                <span class="photo-post__publication-time">(20 часов назад)</span>
-              </h2>
-              <div class="photo-post__post-text">
-                <p>Здесь могла быть ваша цитата о высоком и&nbsp;вечном.</p>
+              <div class="photo-post__text-wrapper">
+                <h2 class="photo-post__title">
+                  <span class="photo-post__author-name">Борис</span>
+                  <span class="photo-post__publication-time">(20 часов назад)</span>
+                </h2>
+                <div class="photo-post__post-text">
+                  <p>Здесь могла быть ваша цитата о высоком и&nbsp;вечном.</p>
+                </div>
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
@@ -137,15 +155,20 @@
           </section>
           <section class="photo-post">
             <a class="photo-post__image-link" href="#">
-              <img class="photo-post__image" src="img/photo-4-mobile.jpg" alt="" width="280" height="180">
+              <picture>
+                <source media = "(min-width: 700px)" srcset = "img/photo-4-tablet.jpg">
+                <img class="photo-post__image" src="img/photo-4-mobile.jpg" alt="" width="280" height="180">
+              </picture>
             </a>
             <div class="photo-post__content">
-              <h2 class="photo-post__title">
-                <span class="photo-post__author-name">Сергей</span>
-                <span class="photo-post__publication-time">(25 часов назад)</span>
-              </h2>
-              <div class="photo-post__post-text">
-                <p>Самая кубанская в&nbsp;мире!</p>
+              <div class="photo-post__text-wrapper">
+                <h2 class="photo-post__title">
+                  <span class="photo-post__author-name">Сергей</span>
+                  <span class="photo-post__publication-time">(25 часов назад)</span>
+                </h2>
+                <div class="photo-post__post-text">
+                  <p>Самая кубанская в&nbsp;мире!</p>
+                </div>
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
@@ -158,15 +181,20 @@
           </section>
           <section class="photo-post">
             <a class="photo-post__image-link" href="#">
-              <img class="photo-post__image" src="img/photo-5-mobile.jpg" alt="" width="280" height="180">
+              <picture>
+                <source media = "(min-width: 700px)" srcset = "img/photo-5-tablet.jpg">
+                <img class="photo-post__image" src="img/photo-5-mobile.jpg" alt="" width="280" height="180">
+              </picture>
             </a>
             <div class="photo-post__content">
-              <h2 class="photo-post__title">
-                <span class="photo-post__author-name">Максим</span>
-                <span class="photo-post__publication-time">(40 часов назад)</span>
-              </h2>
-              <div class="photo-post__post-text">
-                <p>Где <nobr>снег-то</nobr>?</p>
+              <div class="photo-post__text-wrapper">
+                <h2 class="photo-post__title">
+                  <span class="photo-post__author-name">Максим</span>
+                  <span class="photo-post__publication-time">(40 часов назад)</span>
+                </h2>
+                <div class="photo-post__post-text">
+                  <p>Где <nobr>снег-то</nobr>?</p>
+                </div>
               </div>
               <div class="like-field">
                 <button class="like-field__btn">Нравится</button>
@@ -179,15 +207,20 @@
          </section>
          <section class="photo-post">
           <a class="photo-post__image-link" href="#">
-            <img class="photo-post__image" src="img/photo-6-mobile.jpg" alt="" width="280" height="180">
+            <picture>
+              <source media = "(min-width: 700px)" srcset = "img/photo-6-tablet.jpg">
+              <img class="photo-post__image" src="img/photo-6-mobile.jpg" alt="" width="280" height="180">
+            </picture>
           </a>
           <div class="photo-post__content">
-            <h2 class="photo-post__title">
-             <span class="photo-post__author-name">Надежда</span>
-             <span class="photo-post__publication-time">(45 часов назад)</span>
-           </h2>
-           <div class="photo-post__post-text">
-             <p>Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
+            <div class="photo-post__text-wrapper">
+              <h2 class="photo-post__title">
+               <span class="photo-post__author-name">Надежда</span>
+               <span class="photo-post__publication-time">(45 часов назад)</span>
+             </h2>
+             <div class="photo-post__post-text">
+               <p>Всем GM&nbsp;и&nbsp;взаимные лайки!</p>
+             </div>
            </div>
            <div class="like-field">
              <button class="like-field__btn">Нравится</button>
@@ -204,7 +237,11 @@
     <h2 class="post-photo__title">Затмите их&nbsp;всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
     <div class="post-photo__wrapper">
       <div class="post-photo__left-container">
-        <img class="post-photo__image" src="img/photo-7-mobile.jpg" alt="Ваша фотография" width="280" height="375">
+        <picture>
+          <source media = "(min-width: 700px)" srcset = "img/photo-7-tablet.jpg">
+          <img class="post-photo__image" src="img/photo-7-mobile.jpg" alt="Ваша фотография" width="280" height="375">
+        </picture>
+
       </div>
       <div class="post-photo__right-container">
         <div class="post-photo__filter">
@@ -215,19 +252,19 @@
           </div>
 
           <div class="post-photo__filter-controllers">
-            <div class="post-photo__filter-controller  post-photo__filter-controller--active  post-photo__filter-controller--filter1">
+            <div class="post-photo__filter-controller  post-photo__filter-controller--first post-photo__filter-controller--active">
               <div class="range-controls">
                 <div class="range-controls__scale"></div>
                 <div class="range-controls__toggle"></div>
               </div>
             </div>
-            <div class="post-photo__filter-controller  post-photo__filter-controller--filter2">
+            <div class="post-photo__filter-controller  post-photo__filter-controller--second">
               <div class="range-controls">
                 <div class="range-controls__scale"></div>
                 <div class="range-controls__toggle"></div>
               </div>
             </div>
-            <div class="post-photo__filter-controller  post-photo__filter-controller--filter3">
+            <div class="post-photo__filter-controller  post-photo__filter-controller--third">
               <div class="range-controls">
                 <div class="range-controls__scale"></div>
                 <div class="range-controls__toggle"></div>
@@ -248,7 +285,7 @@
 <footer class="page-footer  page-footer--photo-page">
   <div class="page-footer__wrapper">
     <div class="page-footer__container">
-      <a class="logo  logo--extended">Pink</a>
+      <a class="logo  logo--blue">Pink</a>
       <div class="social-links">
         <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
         <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>

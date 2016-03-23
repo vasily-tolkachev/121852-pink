@@ -1,11 +1,18 @@
 .post-photo {
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__left-container {
     padding: 20px 20px 0 20px;
     background-color: $pages-color-gray;
   }
 
   &__right-container {
+    display: flex;
+    flex-direction: column;
     background-color: $pages-color-gray;
   }
 
@@ -23,11 +30,12 @@
   }
 
   &__filter {
-
-    font-size: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   &__filter-buttons {
+    font-size: 0;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -55,38 +63,40 @@
   }
 
   &__filter-controller {
-    position: relative;
+    // position: relative;
     padding: 20px 40px 34px 40px;
     border-bottom: 1px solid $cansel-btn-color-dark-gray;
 
-    &::after {
-      border: 1px solid #000;
-      content: '';
-      position: absolute;
-      width: 35px;
-      height: 35px;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    // &::after {
+    //   border: 1px solid #000;
+    //   content: '';
+    //   position: absolute;
+    //   width: 35px;
+    //   height: 35px;
+    //   left: 0;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    // }
 
-    &--filter1::after {
-      background: url(../img/icon-editor-crop.svg) no-repeat 50% 50%;
-      background-size: 25px 25px;
-    }
+    // &--filter1::after {
+    //   background: url(../img/icon-editor-crop.svg) no-repeat 50% 50%;
+    //   background-size: 25px 25px;
+    // }
 
-    &--filter2::after {
-      background: url(../img/icon-editor-fill.svg) no-repeat 50% 50%;
-      background-size: 25px 25px;
-    }
+    // &--filter2::after {
+    //   background: url(../img/icon-editor-fill.svg) no-repeat 50% 50%;
+    //   background-size: 25px 25px;
+    // }
 
-    &--filter3::after {
-      background: url(../img/icon-editor-contrast.svg) no-repeat 50% 50%;
-      background-size: 16px 16px;
-    }
+    // &--filter3::after {
+    //   background: url(../img/icon-editor-contrast.svg) no-repeat 50% 50%;
+    //   background-size: 16px 16px;
+    // }
   }
 
   &__buttons {
+    display: flex;
+    flex-direction: column;
     padding: 38px 20px 31px 20px;
   }
 
@@ -97,39 +107,124 @@
       &:not(.post-photo__filter-controller--active) {
         display: none;
       }
-
-      &::after {
-        display: none;
-      }
     }
   }
 
   @media #{$tablet-width} {
+    margin-top: 23px;
+
     &__wrapper {
       @include content-wrapper-tablet;
-      display: flex;
-      justify-content: space-between;
+      flex-direction: row;
+      padding-top: 57px;
+      padding-bottom: 54px;
+      background-color: $pages-color-gray;
     }
 
-    &__right-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      border: 1px solid #000;
-      box-sizing: border-box;
-      width: 50%;
+    &__title {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 26px;
     }
 
     &__left-container {
-      background-color: #000;
-      border: 1px solid #000;
+      padding: 0 10px 0 0;
       box-sizing: border-box;
       width: 50%;
     }
 
+    &__right-container {
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 50%;
+      padding-left: 35px;
+    }
+
+    &__image {
+      width: 300px;
+      height: 400px;
+    }
+
+    &__filter {
+      flex-direction: row;
+    }
+
+    &__filter-controllers {
+
+      z-index: 0;
+      width: 275px;
+    }
+
+    &__filter-controller {
+      padding: 19px 18px 34px 54px;
+      margin-bottom: 16px;
+
+      &--first {
+        .range-controls {
+          &__toggle {
+            left: 73%;
+          }
+        }
+      }
+
+      &--second {
+        .range-controls {
+          &__toggle {
+            left: 12.5%;
+          }
+        }
+      }
+
+      &--third {
+        .range-controls {
+          &__toggle {
+            left: 48%;
+          }
+        }
+      }
+    }
+
     &__filter-buttons {
-      display: none;
+      margin: 0;
+      padding: 0;
+      width: 50px;
+      margin-right: -49px;
+      flex-direction: column;
+      justify-content: flex-start;
+      z-index: 1;
+    }
+
+    &__filter-button {
+      width: 50px;
+      height: 50px;
+      margin-top: -4px;
+      margin-bottom: 26px;
+
+      &--filter1 {
+        background-size: 25px 25px;
+        background-position: 2px 50%;
+      }
+
+      &--filter2 {
+        background-size: 25px 25px;
+        background-position: 3px 50%;
+      }
+
+      &--filter3 {
+        background-size: 16px 16px;
+        background-position: 8px 50%;
+      }
+    }
+
+    &__buttons {
+      padding: 0;
+      min-height: 134px;
+      justify-content: space-between;
+      padding: 0 13px 0 2px;
+    }
+
+    .transparent-btn {
+      margin: 0;
     }
 
   }

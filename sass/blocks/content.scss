@@ -11,7 +11,7 @@
   background: url(../img/logo-pink-white-mobile.svg) no-repeat;
   background-size: 100% 100%;
 
-  &--extended {
+  &--blue {
     background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
     background-size: 147px 40px;
     width: 147px;
@@ -19,10 +19,22 @@
   }
 
   @media #{$tablet-width} {
-    background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
+    background: url(../img/logo-pink-white-tablet.svg) no-repeat;
     background-size: 147px 40px;
     width: 147px;
     height: 40px;
+
+    &--blue {
+      background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
+    }
+  }
+
+  @media #{$desktop-width} {
+    background: url(../img/logo-pink-white-desktop.svg) no-repeat;
+
+    &--blue {
+      background: url(../img/logo-pink-blue-desktop.svg) no-repeat;
+    }
   }
 }
 
@@ -248,6 +260,15 @@
     background-size: 14px 12px;
     margin-right: 17px;
   }
+
+  @media #{$tablet-width} {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &__btn {
+      margin-right: 0px;
+    }
+  }
 }
 
 .range-controls {
@@ -283,9 +304,9 @@
   border-radius: 25px/27.5px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   text-align: center;
-  padding: 10px;
+  padding: 16px;
   margin-bottom: 10px;
 
   border: 3px solid $pages-text-color-pink;

@@ -60,6 +60,13 @@
       margin-top: 22px;
       padding-right: 38px;
     }
+
+    &--photo-page {
+      .page-footer__container {
+        padding-top: 0px;
+        min-height: 111px;
+      }
+    }
   }
 
   @media #{$desktop-width} {
