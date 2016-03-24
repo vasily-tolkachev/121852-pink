@@ -6,10 +6,6 @@
     @include content-wrapper-mobile;
   }
 
-  &__slide {
-    display: none;
-  }
-
   &__switcher {
     display: flex;
     justify-content: space-between;
@@ -46,6 +42,10 @@
       height: 6px;
       background-color: $cansel-btn-color-darkest-gray;
     }
+  }
+
+  &__toggle {
+    display: none;
   }
 
   &__switcher-input {
@@ -100,83 +100,143 @@
     }
   }
 
-  &__toggle {
-    display: none;
-  }
-
-  &--versions-slider {
-    // position: relative;
-    // padding-top: 400px;
-    background: $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
-  }
-
-  @media #{$tablet-width} {
-    padding-bottom: 20px;
-
-    &__wrapper {
-      @include content-wrapper-tablet;
-    }
-  }
-
-  @media #{$desktop-width} {
-    padding-top: 60px;
-    &__wrapper {
-      @include content-wrapper-desktop;
-    }
-
-    &__slides {
-      position: relative;
-      padding: 0 120px;
-    }
-
-    &__switcher {
+  &--comment-slider {
+    .slider__slide {
       display: none;
     }
 
-    &__toggle {
-      display: block;
-      @include reset-button-style;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%) translateY(6px);
-      height: 100%;
-      width: 80px;
-      font-size: 0;
-      outline: none;
-      cursor: pointer;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        width: 29px;
-        height: 29px;
-        transform-origin: 50% 50%;
-        // background-image: url("../img/logo-pink-blue-mobile.svg");
-        border: 2px solid #bec2c7;
-      }
-
-      &--prev {
-        left: 0;
-
-        &::before {
-          left: 0;
-          transform: translate(5px, -50%) rotate(-45deg);
-          border-bottom: none;
-          border-right: none;
+    .slider__switcher-input {
+      &--first:checked {
+        & ~ .slider__slide:nth-of-type(1) {
+          display: block;
         }
       }
 
-      &--next {
-        right: 0;
+      &--second:checked {
+        & ~ .slider__slide:nth-of-type(2) {
+          display: block;
+        }
+      }
 
-        &::before {
-          right: 0;
-          transform: translate(-5px, -50%) rotate(-45deg);
-          border-left: none;
-          border-top: none;
+      &--third:checked {
+
+        & ~ .slider__slide:nth-of-type(3) {
+          display: block;
         }
       }
     }
   }
+
+  &--table-slider {
+    background: $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
+  }
+
+  @media #{$mobile-width-only} {
+    &--table-slider {
+      .slider__slides {
+        padding-top: 370px;
+        padding-bottom: 5px;
+        position: relative;
+      }
+
+      .slider__slide {
+        position: absolute;
+        top: 49px;
+        left: 0;
+      }
+
+      .slider__switcher-input {
+        &--second:checked {
+          & ~ .slider__slide {
+            left: -280px;
+           //transform: translateX(-280px)
+          }
+        }
+
+        &--first:checked {
+          & ~ .slider__slide {
+            left: 0;
+          }
+        }
+
+        &--third:checked {
+          & ~ .slider__slide {
+            left: -560px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  // @media #{$tablet-width} {
+  //   padding-bottom: 20px;
+
+  //   &__wrapper {
+  //     @include content-wrapper-tablet;
+  //   }
+  // }
+
+  // @media #{$desktop-width} {
+  //   padding-top: 60px;
+  //   &__wrapper {
+  //     @include content-wrapper-desktop;
+  //   }
+
+  //   &__slides {
+  //     position: relative;
+  //     padding: 0 120px;
+  //   }
+
+  //   &__switcher {
+  //     display: none;
+  //   }
+
+  //   &__toggle {
+  //     display: block;
+  //     @include reset-button-style;
+  //     position: absolute;
+  //     top: 50%;
+  //     transform: translateY(-50%) translateY(6px);
+  //     height: 100%;
+  //     width: 80px;
+  //     font-size: 0;
+  //     outline: none;
+  //     cursor: pointer;
+
+  //     &::before {
+  //       content: "";
+  //       position: absolute;
+  //       top: 50%;
+  //       width: 29px;
+  //       height: 29px;
+  //       transform-origin: 50% 50%;
+  //       // background-image: url("../img/logo-pink-blue-mobile.svg");
+  //       border: 2px solid #bec2c7;
+  //     }
+
+  //     &--prev {
+  //       left: 0;
+
+  //       &::before {
+  //         left: 0;
+  //         transform: translate(5px, -50%) rotate(-45deg);
+  //         border-bottom: none;
+  //         border-right: none;
+  //       }
+  //     }
+
+  //     &--next {
+  //       right: 0;
+
+  //       &::before {
+  //         right: 0;
+  //         transform: translate(-5px, -50%) rotate(-45deg);
+  //         border-left: none;
+  //         border-top: none;
+  //       }
+  //     }
+  //   }
+  // }
 }

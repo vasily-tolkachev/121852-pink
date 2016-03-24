@@ -1,15 +1,16 @@
 .features-list {
   background:
-  url(../img/iphone-screen-mobile.png) 50% 110% no-repeat,
+  url(../img/iphone-screen-mobile.png) 50% 109% no-repeat,
   $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
-  padding: 50px 0 300px 0;
+
+  padding: 80px 0 287px 0;
 
   &__wrapper {
-    padding: 0 20px;
+    @include content-wrapper-mobile;
   }
 
   &__item {
-    padding-bottom: 20px;
+    margin-bottom: 31px;
     text-align: center;
     line-height: 24px;
   }
@@ -22,8 +23,11 @@
 
   &__text {
     font-size: 14px;
-    padding: 0;
-    margin: 0;
+
+    p {
+      padding: 0;
+      margin: 12px 0;
+    }
   }
 
 

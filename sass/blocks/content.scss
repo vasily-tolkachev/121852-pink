@@ -352,8 +352,9 @@
     font-size: 0;
     display: flex;
     justify-content: space-between;
-    width: 210px;
-    margin: 30px auto;
+    align-items: center;
+    width: 219px;
+    margin: 33px auto 17px auto;
 
     &__link {
       width: 60px;
@@ -361,6 +362,7 @@
 
       &--apple {
         background: url(../img/logo-apple.svg) 50% 50% no-repeat;
+        transform: translateY(-3px);
       }
 
       &--android {

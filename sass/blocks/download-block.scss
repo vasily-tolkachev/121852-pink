@@ -1,11 +1,16 @@
 .download-block {
-  background-color: $page-color-dark-blue;
-  padding: 30px 0 10px 0;
+  background-color: #1d2631;
+  padding: 29px 0 16px 0;
   color: white;
   text-align: center;
 
   &__wrapper {
-    padding: 0 20px;
+    @include content-wrapper-mobile;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 24px;
   }
 
   @media #{$tablet-width} {
