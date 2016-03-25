@@ -82,9 +82,39 @@
     padding-top: 174px;
     padding-bottom: 100px;
 
+    &__wrapper {
+      @include content-wrapper-desktop;
+    }
+
+    &--index-page {
+      padding-top: 218px;
+      padding-right: 53.5%;
+      padding-bottom: 92px;
+      background:
+      url(../img/iphone-hand-desktop@1x.png) no-repeat 97% 100%,
+      $pages-text-color url(../img/bg-back-desktop.jpg) no-repeat 50% 0;
+
+      .intro__text {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 300;
+        padding: 0 0 23px 0;
+      }
+
+      .intro__wrapper {
+        @include content-wrapper-desktop;
+      }
+
+      .transparent-btn {
+        font-size: 21px;
+        font-weight: 700;
+        padding: 14px 16px 16px 18px;
+      }
+    }
+
     &--photo-page {
-      padding-right: 350px;
-      padding-left: 350px;
+      padding-right: 260px;
+      padding-left: 260px;
     }
   }
 }

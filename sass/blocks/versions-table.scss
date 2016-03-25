@@ -178,73 +178,40 @@
       }
     }
   }
+
+  @media #{$desktop-width} {
+    &__header-cell {
+      min-width: 235px;
+      padding: 16px 14px 14px 14px;
+
+      span:first-child {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 2px;
+      }
+
+      span:last-child {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      &--marker {
+        &::after {
+          background-image: linear-gradient(to bottom right, transparent 15%,
+                        $form-label-color-pink 16%, $form-label-color-pink 36%, transparent 37%, transparent 100%);
+        }
+
+        &::before {
+          transform: rotate(-45deg) translateY(0) translateX(-1px);
+        }
+      }
+    }
+
+    &__data-cell {
+      min-width: 235px;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 14px 22px 15px 22px;
+    }
+  }
 }
-
-
-  // th {
-  //   display: block;
-  //   width: 100%;
-  // }
-
-  // tr {
-  //   display: flex;
-  //   box-sizing: border-box;
-  //   width: 100%;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  // }
-
-  // td {
-  //   display: block;
-  //   width: 100%;
-  // }
-
-  // th:nth-child(1),
-  // td:nth-child(1){
-  //   order: 0;
-  // }
-
-  // th:nth-child(2),
-  // td:nth-child(2){
-  //   order: 10;
-  // }
-
-  // th:nth-child(3),
-  // td:nth-child(3){
-  //   order: 20;
-  // }
-
-  // th:nth-child(4),
-  // td:nth-child(4){
-  //   order: 30;
-  // }
-
-  // tbody {
-  //   display: block;
-  //   width: 500px;
-  //   // margin: 0;
-  //   // padding: 0;
-  //  }
-
-//}
-
-// #versions-slider-btn-1:checked ~ table tbody tr {
-
-//     border: #000;
-
-// }
-
-// #versions-slider-btn-1:checked ~ table tbody th:nth-child(1),
-// #versions-slider-btn-1:checked ~ table tbody td:nth-child(1){
-//   order: 5;
-// }
-
-// #versions-slider-btn-2:checked ~ table tbody th:nth-child(1),
-// #versions-slider-btn-2:checked ~ table tbody td:nth-child(1){
-//   order: 15;
-// }
-
-// #versions-slider-btn-3:checked ~ table tbody th:nth-child(1),
-// #versions-slider-btn-3:checked ~ table tbody td:nth-child(1){
-//   order: 25;
-// }

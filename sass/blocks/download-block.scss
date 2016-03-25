@@ -26,4 +26,12 @@
       font-size: 18px;
     }
   }
+
+  @media #{$desktop-width} {
+
+    &__wrapper {
+      @include content-wrapper-desktop;
+    }
+
+  }
 }
