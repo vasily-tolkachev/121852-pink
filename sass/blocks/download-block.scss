@@ -15,10 +15,15 @@
 
   @media #{$tablet-width} {
     background-color: transparent;
+    padding-bottom: 12px;
 
     &__wrapper {
       @include content-wrapper-tablet;
-      padding-right: 50%;
+      padding-right: 10px;
+    }
+
+    &__text {
+      font-size: 18px;
     }
   }
 }

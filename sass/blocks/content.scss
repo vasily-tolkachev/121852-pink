@@ -54,15 +54,17 @@
 
     &--twitter {
       background: url(../img/icon-twitter.svg) no-repeat 50% 50%;
-
+      background-size: 18px 18px;
     }
 
     &--facebook {
-      background: url(../img/icon-facebook.svg) no-repeat 50% 50%;
+      background: url(../img/icon-facebook.svg) no-repeat 50% 46%;
+      background-size: 10px 18px;
     }
 
     &--you-tube {
-      background: url(../img/icon-youtube.svg) no-repeat 50% 50%;
+      background: url(../img/icon-youtube.svg) no-repeat 54% 45%;
+      background-size: 17px 14px;
     }
   }
 
@@ -373,6 +375,22 @@
         background: url(../img/logo-microsoft.svg) 50% 50% no-repeat;
       }
     }
+
+    @media #{$tablet-width} {
+      width: 223px;
+      margin: 44px auto 34px auto;
+
+      &__link {
+        &--apple {
+          background: url(../img/logo-apple.svg) 50% 50% no-repeat;
+          transform: translateY(0);
+        }
+        &--microsoft {
+          background: url(../img/logo-microsoft.svg) 50% 50% no-repeat;
+          transform: translate(-3px, 3px);
+        }
+      }
+    }
   }
 
   .offer-block {
@@ -478,7 +496,7 @@
   }
 
   @media #{$tablet-width} {
-    height: 380px;
+    height: 377px;
     &::after {
       height: 70px;
     }
@@ -493,12 +511,13 @@
 }
 
 .research {
-  background-color: violet;
   display: none;
-  padding: 60px 0;
 
   @media #{$tablet-width} {
     display: block;
+    position: relative;
+    padding-top: 71px;
+    padding-bottom: 66px;
 
     &__wrapper {
       @include content-wrapper-tablet;
@@ -508,15 +527,53 @@
     &__title {
       font-size: 30px;
       line-height: 36px;
+      padding-right: 120px;
+      margin-bottom: 10px;
     }
 
     &__text {
       font-size: 14px;
       line-height: 24px;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 8px;
+      }
     }
 
     &__link {
+      font-size: 14px;
+      line-height: 24px;
       color: $pages-text-color-pink;
+    }
+
+    &::before {
+      content: '24';
+      position: absolute;
+      width: 202px;
+      height: 202px;
+      top: 114px;
+      left: 58px;
+      box-sizing: border-box;
+      border: 13px solid $pages-text-color-pink;
+      border-radius: 50%;
+      font-size: 96px;
+      font-weight: 700;
+      color: $pages-text-color-pink;
+      text-align: center;
+      padding-top: 68px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 280px;
+      height: 282px;
+      top: 58px;
+      left: 39px;
+      background: url(../img/icon-timer.svg) 0 0 no-repeat;
+      background-size: 240px 277px;
     }
   }
 

@@ -35,16 +35,26 @@
   @media #{$tablet-width} {
     text-align: left;
     background:
-    url(../img/iphone-screen-mobile.png) 40px 110% no-repeat,
+    url(../img/iphone-screen-tablet-3@1x.png) 40px 110% no-repeat,
     $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
     padding-bottom: 0;
+    padding-top: 74px;
+    padding-bottom: 9px;
 
     &__wrapper {
+      @include content-wrapper-tablet;
       padding-left: 50%;
     }
 
     &__item {
       text-align: left;
+      margin-bottom: 34px;
+
+      &:nth-of-type(2) {
+        span {
+          display: block;
+        }
+      }
     }
   }
 

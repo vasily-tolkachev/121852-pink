@@ -28,7 +28,6 @@
 
     &--marker {
       position: relative;
-      // z-index: -1;
 
       &::after {
         content: '';
@@ -37,7 +36,8 @@
         height: 100px;
         top: 0;
         left: -2px;
-        background: url(../img/bg-hit.svg) no-repeat -1px -1px;
+        background-image: linear-gradient(to bottom right, transparent 15%,
+                      $form-label-color-pink 16%, $form-label-color-pink 35%, transparent 36%, transparent 100%);
         z-index: 1;
       }
 
@@ -99,9 +99,82 @@
     }
 
     &__data-cell {
-
       &:first-of-type {
         display: none;
+      }
+    }
+  }
+
+  @media #{$tablet-width} {
+    border: none;
+
+    &__header-cell {
+      min-width: 155px;
+      padding: 14px 14px 6px 14px;
+      border-bottom: 2px solid $page-color-dark-blue;
+      border-right: 2px solid $pages-color-dark-gray;
+
+      &:first-of-type {
+        border-right: 2px solid $page-color-dark-blue;
+      }
+
+      &:last-of-type {
+        border-right: 2px solid $page-color-dark-blue;
+      }
+
+      &--first {
+        background-color: transparent;
+        border-left: none;
+        border-bottom: 2px solid $pages-color-dark-gray;
+      }
+
+      span:first-child {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      span:last-child {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      &--marker {
+        &::after {
+          left: 0;
+          background-image: linear-gradient(to bottom right, transparent 10%,
+                        $form-label-color-pink 11%, $form-label-color-pink 30%, transparent 31%, transparent 100%);
+        }
+
+        &::before {
+          transform: rotate(-45deg) translateY(-8px) translateX(2px);
+        }
+      }
+    }
+
+    &__data-cell {
+      min-width: 155px;
+      text-transform: none;
+      font-size: 14px;
+      line-height: 30px;
+      padding: 7px 16px 8px 16px;
+
+      span:first-of-type {
+        display: none;
+      }
+
+      &--first {
+        span:first-of-type {
+          display: inline-block;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        right: 50%;
+        transform: translate(50%, -50%);
       }
     }
   }

@@ -149,7 +149,6 @@
         &--second:checked {
           & ~ .slider__slide {
             left: -280px;
-           //transform: translateX(-280px)
           }
         }
 
@@ -168,15 +167,22 @@
     }
   }
 
+  @media #{$tablet-width} {
+    padding-bottom: 20px;
 
+    &__wrapper {
+      @include content-wrapper-tablet;
+    }
 
-  // @media #{$tablet-width} {
-  //   padding-bottom: 20px;
+    &--table-slider {
+      padding-top: 89px;
+      padding-bottom: 68px;
 
-  //   &__wrapper {
-  //     @include content-wrapper-tablet;
-  //   }
-  // }
+      .slider__switcher {
+        display: none;
+      }
+    }
+  }
 
   // @media #{$desktop-width} {
   //   padding-top: 60px;
