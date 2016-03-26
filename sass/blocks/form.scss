@@ -64,6 +64,19 @@
     border-radius: 2px;
     margin: 0;
     padding: 14px 21px 15px 21px;
+
+    &:hover {
+      border-color: $page-color-dark-blue;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $pages-text-color-pink;
+    }
+
+    &:active {
+      border-color: $pages-text-color-pink;
+    }
   }
 
   &__send-container {
@@ -102,30 +115,49 @@
         position: relative;
         padding: 5px 0 5px 69px;
         cursor: pointer;
-      }
 
-      .form__label:before {
-        content: '';
-        position: absolute;
-        display: block;
-        left: 0;
-        top: 0;
-        box-sizing: border-box;
-        border: 2px solid $form-field-color-gray;
-        background-color: #fff;
-        width: 39px;
-        height: 39px;
-      }
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          box-sizing: border-box;
+          border: 2px solid $form-field-color-gray;
+          background-color: #fff;
+          width: 39px;
+          height: 39px;
+          border-radius: 3px;
+        }
 
-      .form__label:after {
-        content: '';
-        position: absolute;
-        left: 10px;
-        top: 11px;
-        width: 30px;
-        height: 30px;
-        background: url(../img/icon-yes.svg) no-repeat;
-        display: none;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 10px;
+          top: 11px;
+          width: 30px;
+          height: 30px;
+          background: url('data:image/svg+xml;utf8,<svg fill="#d22856" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+   xml:space="preserve">
+<path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0
+  s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09
+  C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+</svg>') no-repeat;
+          display: none;
+        }
+
+        &:hover {
+           &::before{
+            border-color: $page-color-dark-blue;
+           }
+        }
+
+        &:active {
+          &::before{
+            border-color: $pages-text-color-pink;
+          }
+        }
       }
 
       .form__field {
@@ -410,7 +442,6 @@
 
         .form__border-wrapper {
           padding: 35px 58px 0 58px;
-          // padding: 50px 58px 0 58px;
         }
       }
 
