@@ -13,6 +13,12 @@
     }
   }
 
+  &--photo-page {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @media #{$tablet-width} {
     &__wrapper {
       @include content-wrapper-tablet;
@@ -26,6 +32,10 @@
         display: block;
       }
     }
+
+    &--photo-page {
+      margin-bottom: 41px;
+    }
   }
 
   @media #{$desktop-width} {
@@ -38,6 +48,14 @@
 
       span {
         display: inline-block;
+      }
+    }
+
+    &--photo-page {
+      margin-bottom: 53px;
+
+      .content-description__text {
+        padding: 74px 150px 17px 150px;
       }
     }
   }

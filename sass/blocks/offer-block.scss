@@ -1,0 +1,53 @@
+.offer-block {
+  padding: 11px 0 4px 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+
+  &__wrapper {
+    @include content-wrapper-mobile;
+  }
+
+  &__caption {
+   margin: 29px 0;
+  }
+
+  @media #{$tablet-width} {
+    padding: 49px 0 47px 0;
+    font-size: 40px;
+    line-height: 48px;
+
+    &__wrapper {
+      @include content-wrapper-tablet;
+    }
+
+    &__caption {
+      margin: 0 auto;
+
+      &:nth-child(2) {
+        width: 400px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  @media #{$desktop-width} {
+    padding: 67px 0 79px 0;
+    font-size: 50px;
+    line-height: 60px;
+
+    &__wrapper {
+      @include content-wrapper-desktop;
+    }
+
+    &__caption {
+
+      &:nth-child(2) {
+        width: 500px;
+      }
+    }
+  }
+}

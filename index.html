@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink</title>
   <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -10,7 +11,7 @@
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo  logo--header">Pink</a>
+        <a class="logo">Pink</a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
@@ -32,7 +33,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="intro  intro--main">
+      <div class="intro  intro--index-page">
         <div class="intro__wrapper">
           <h1 class="intro__text">Взгляните на&nbsp;жизнь иначе!</h1>
         </div>
@@ -62,19 +63,19 @@
       </div>
       <div class="features-list">
         <div class="features-list__wrapper">
-          <section class="features-list__item">
+          <section class="features-list__item  features-list__item--first">
             <h2 class="features-list__title">Поднимает настроение</h2>
             <div class="features-list__text">
-              <p>Приложение позволит вам победить осеннюю хандру и&nbsp;деперессию буквально в&nbsp;несколько кликов!</p>
+              <p>Приложение позволит вам победить осеннюю хандру и&nbsp;деперессию буквально в несколько кликов!</p>
             </div>
           </section>
-          <section class="features-list__item">
+          <section class="features-list__item  features-list__item--second">
             <h2 class="features-list__title">Меняет мир вокруг</h2>
             <div class="features-list__text">
-              <p>Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span>усилить эффект</span></p>
             </div>
           </section>
-          <section class="features-list__item">
+          <section class="features-list__item  features-list__item--third">
             <h2 class="features-list__title">Заводит новых друзей</h2>
             <div class="features-list__text">
               <p>Ставьте лайки, комментируте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
@@ -86,12 +87,12 @@
         <div class="research__wrapper">
           <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
           <div class="research__text">
-            <p>Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <p>Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
           </div>
           <a href="#" class="research__link">Узнать больше об&nbsp;исследовании</a>
         </div>
       </section>
-      <div class="slider  slider--comment-slider">
+      <div class="slider slider--comment-slider">
         <div class="slider__wrapper">
           <div class="slider__slides">
             <input class="slider__switcher-input  slider__switcher-input--first" type="radio" id="comment-slider-btn-1" name="comment-slider-toggle" checked>
@@ -140,54 +141,94 @@
           </div>
         </div>
       </div>
-      <div class="slider  slider--versions-slider">
-        <table class="versions-table" border="1">
-          <tr class="versions-table__header-row">
-            <th class="versions-table__header-cell  versions-table__header-cell--marker">
-            </th>
-            <th class="versions-table__header-cell  versions-table__header-cell--marker">
-              <span>База</span>
-              <span>1,99 USD</span>
-            </th>
-            <th class="versions-table__header-cell  versions-table__header-cell--marker">
-              <span>Стандарт</span>
-              <span>3,99 USD</span>
-            </th>
-            <th class="versions-table__header-cell  versions-table__header-cell--marker">
-              <span>Анлим</span>
-              <span>9,99 USD</span>
-            </th>
 
-          </tr>
-          <tr class="versions-table__data-row">
-            <td class="versions-table__data-cell">Розовый фильтр</td>
-            <td class="versions-table__data-cell">+</td>
-            <td class="versions-table__data-cell">+</td>
-            <td class="versions-table__data-cell">+</td>
-          </tr>
-          <tr class="versions-table__data-row">
-            <td class="versions-table__data-cell">Смайлики</td>
-            <td class="versions-table__data-cell">-</td>
-            <td class="versions-table__data-cell">+</td>
-            <td class="versions-table__data-cell">+</td>
-          </tr>
-          <tr class="versions-table__data-row">
-            <td class="versions-table__data-cell">Комментарии</td>
-            <td class="versions-table__data-cell">-</td>
-            <td class="versions-table__data-cell">-</td>
-            <td class="versions-table__data-cell">+</td>
-          </tr>
-        </table>
-        <div class="slider__switcher">
-          <input class="slider__switcher-input" type="radio" id="table-slider-btn-1" name="table-slider-toggle" checked>
-          <label class="slider__switcher-label" for="table-slider-btn-1"></label>
-          <input class="slider__switcher-input" type="radio" id="table-slider-btn-2" name="table-slider-toggle">
-          <label class="slider__switcher-label" for="table-slider-btn-2"></label>
-          <input class="slider__switcher-input" type="radio" id="table-slider-btn-3" name="table-slider-toggle">
-          <label class="slider__switcher-label" for="table-slider-btn-3"></label>
+      <div class="slider slider--table-slider">
+        <div class="slider__wrapper">
+          <div class="slider__slides">
+            <input class="slider__switcher-input  slider__switcher-input--first" type="radio" id="table-slider-btn-1" name="table-slider-toggle">
+            <input class="slider__switcher-input  slider__switcher-input--second" type="radio" id="table-slider-btn-2" name="table-slider-toggle" checked>
+            <input class="slider__switcher-input  slider__switcher-input--third" type="radio" id="table-slider-btn-3" name="table-slider-toggle">
+            <div class="slider__slide">
+              <table class="versions-table" border="1">
+                <tr class="versions-table__header-row">
+                  <th class="versions-table__header-cell  versions-table__header-cell--first">
+                  </th>
+                  <th class="versions-table__header-cell">
+                    <span>База</span>
+                    <span>1,99 USD</span>
+                  </th>
+                    <th class="versions-table__header-cell  versions-table__header-cell--marker">
+                    <span>Стандарт</span>
+                    <span>3,99 USD</span>
+                  </th>
+                  <th class="versions-table__header-cell">
+                    <span>Анлим</span>
+                    <span>9,99 USD</span>
+                  </th>
+                </tr>
+                <tr class="versions-table__data-row">
+                  <td class="versions-table__data-cell  versions-table__data-cell--first">
+                    <span>Розовый фильтр</span>
+                  </td>
+                  <td class="versions-table__data-cell">
+                    <span>Розовый фильтр</span>
+                    <span>+</span>
+                  </td>
+                  <td class="versions-table__data-cell">
+                    <span>Розовый фильтр</span>
+                    <span>+</span>
+                  </td>
+                  <td class="versions-table__data-cell">
+                    <span>Розовый фильтр</span>
+                    <span>+</span>
+                  </td>
+                </tr>
+                <tr class="versions-table__data-row">
+                  <td class="versions-table__data-cell  versions-table__data-cell--first">
+                    <span>Смайлики</span>
+                  </td>
+                  <td class="versions-table__data-cell  versions-table__data-cell--no">
+                    <span>Смайлики</span>
+                    <span>-</span>
+                  </td>
+                  <td class="versions-table__data-cell">
+                    <span>Смайлики</span>
+                    <span>+</span>
+                  </td>
+                  <td class="versions-table__data-cell">
+                    <span>Смайлики</span>
+                    <span>-</span>
+                  </td>
+                </tr>
+                <tr class="versions-table__data-row">
+                  <td class="versions-table__data-cell  versions-table__data-cell--first">
+                    <span>Комментарии</span>
+                  </td>
+                  <td class="versions-table__data-cell  versions-table__data-cell--no">
+                    <span>Комментарии</span>
+                    <span>-</span>
+                  </td>
+                  <td class="versions-table__data-cell  versions-table__data-cell--no">
+                    <span>Комментарии</span>
+                    <span>+</span>
+                  </td>
+                  <td class="versions-table__data-cell">
+                    <span>Комментарии</span>
+                    <span>+</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="slider__switcher">
+              <label class="slider__switcher-label  slider__switcher-label--first" for="table-slider-btn-1"></label>
+              <label class="slider__switcher-label  slider__switcher-label--second" for="table-slider-btn-2"></label>
+              <label class="slider__switcher-label  slider__switcher-label--third" for="table-slider-btn-3"></label>
+            </div>
+            <button class="slider__toggle slider__toggle--prev" type="button">Предыдущий отзыв</button>
+            <button class="slider__toggle slider__toggle--next" type="button">Следующий отзыв</button>
+          </div>
         </div>
       </div>
-
       <div class="contacts-block">
         <div class="contacts-block__wrapper">
           <div class="contacts-block__header">
@@ -213,10 +254,10 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer  page-footer--index">
+    <footer class="page-footer  page-footer--index-page">
       <div class="page-footer__wrapper">
         <div class="page-footer__container">
-          <a class="logo  logo--extended">Pink</a>
+          <a class="logo  logo--blue">Pink</a>
           <div class="social-links">
             <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
             <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>

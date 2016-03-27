@@ -1,0 +1,87 @@
+.comment {
+  text-align: center;
+  padding-bottom: 20px;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__author {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__author-information {
+    display: none;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+
+    p {
+      margin: 13px 0;
+    }
+  }
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 34px;
+
+    &__author {
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 2px;
+    }
+
+    &__author-information {
+      display: block;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
+  }
+
+  @media #{$desktop-width} {
+    padding-top: 112px;
+    padding-bottom: 22px;
+    position: relative;
+
+    &__text {
+      span {
+        display: none;
+      }
+    }
+
+    &__author {
+      font-size: 24px;
+    }
+
+    &__author-information {
+      font-size: 18px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 65px;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+      background: url(../img/icon-quotes.svg) 0 0 no-repeat;
+    }
+  }
+}

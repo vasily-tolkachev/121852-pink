@@ -1,0 +1,120 @@
+.research {
+  display: none;
+
+  @media #{$tablet-width} {
+    display: block;
+    position: relative;
+    padding-top: 71px;
+    padding-bottom: 66px;
+
+    &__wrapper {
+      @include content-wrapper-tablet;
+      padding-left: 50%;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+      padding-right: 120px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+
+      p {
+        margin-top: 10px;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 24px;
+      color: $pages-text-color-pink;
+    }
+
+    &::before {
+      content: '24';
+      position: absolute;
+      width: 202px;
+      height: 202px;
+      top: 114px;
+      left: 58px;
+      box-sizing: border-box;
+      border: 13px solid $pages-text-color-pink;
+      border-radius: 50%;
+      font-size: 96px;
+      font-weight: 700;
+      color: $pages-text-color-pink;
+      text-align: center;
+      padding-top: 68px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 280px;
+      height: 282px;
+      top: 58px;
+      left: 39px;
+      background: url(../img/icon-timer.svg) 0 0 no-repeat;
+      background-size: 240px 277px;
+    }
+  }
+
+  @media #{$desktop-width} {
+    background-color: $pages-color-gray;
+    padding-bottom: 111px;
+
+    &__wrapper {
+      @include content-wrapper-desktop;
+      padding-left: 497px;
+      padding-right: 175px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 31px;
+
+      p {
+        margin-top: 1.3em;
+        margin-bottom: 1.3em;
+      }
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &::before {
+      width: 254px;
+      height: 254px;
+      top: 70px;
+      left: 153px;
+      font-size: 120px;
+      padding-top: 88px;
+      border-width: 17px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 345px;
+      height: 345px;
+      top: 1px;
+      left: 108px;
+      background: url(../img/icon-timer.svg) 0 0 no-repeat;
+      background-size: 345px 346px;
+    }
+  }
+}

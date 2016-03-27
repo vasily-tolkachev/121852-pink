@@ -6,10 +6,6 @@
     @include content-wrapper-mobile;
   }
 
-  &__slide {
-    display: none;
-  }
-
   &__switcher {
     display: flex;
     justify-content: space-between;
@@ -46,6 +42,10 @@
       height: 6px;
       background-color: $cansel-btn-color-darkest-gray;
     }
+  }
+
+  &__toggle {
+    display: none;
   }
 
   &__switcher-input {
@@ -100,14 +100,71 @@
     }
   }
 
-  &__toggle {
-    display: none;
+  &--comment-slider {
+    .slider__slide {
+      display: none;
+    }
+
+    .slider__switcher-input {
+      &--first:checked {
+        & ~ .slider__slide:nth-of-type(1) {
+          display: block;
+        }
+      }
+
+      &--second:checked {
+        & ~ .slider__slide:nth-of-type(2) {
+          display: block;
+        }
+      }
+
+      &--third:checked {
+
+        & ~ .slider__slide:nth-of-type(3) {
+          display: block;
+        }
+      }
+    }
   }
 
-  &--versions-slider {
-    // position: relative;
-    // padding-top: 400px;
+  &--table-slider {
     background: $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
+  }
+
+  @media #{$mobile-width-only} {
+    &--table-slider {
+      .slider__slides {
+        padding-top: 370px;
+        padding-bottom: 5px;
+        position: relative;
+      }
+
+      .slider__slide {
+        position: absolute;
+        top: 49px;
+        left: 0;
+      }
+
+      .slider__switcher-input {
+        &--second:checked {
+          & ~ .slider__slide {
+            left: -280px;
+          }
+        }
+
+        &--first:checked {
+          & ~ .slider__slide {
+            left: 0;
+          }
+        }
+
+        &--third:checked {
+          & ~ .slider__slide {
+            left: -560px;
+          }
+        }
+      }
+    }
   }
 
   @media #{$tablet-width} {
@@ -116,65 +173,85 @@
     &__wrapper {
       @include content-wrapper-tablet;
     }
+
+    &--table-slider {
+      padding-top: 89px;
+      padding-bottom: 68px;
+
+      .slider__switcher {
+        display: none;
+      }
+    }
   }
 
   @media #{$desktop-width} {
-    padding-top: 60px;
     &__wrapper {
-      @include content-wrapper-desktop;
+        @include content-wrapper-desktop;
     }
 
-    &__slides {
-      position: relative;
-      padding: 0 120px;
+    &--table-slider {
+      padding-top: 148px;
+      padding-bottom: 95px;
     }
 
-    &__switcher {
-      display: none;
-    }
+    &--comment-slider {
+      padding-top: 60px;
 
-    &__toggle {
-      display: block;
-      @include reset-button-style;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%) translateY(6px);
-      height: 100%;
-      width: 80px;
-      font-size: 0;
-      outline: none;
-      cursor: pointer;
+      .slider__wrapper {
+        @include content-wrapper-desktop;
+      }
 
-      &::before {
-        content: "";
+      .slider__slides {
+        position: relative;
+        padding: 0 120px;
+      }
+
+      .slider__switcher {
+        display: none;
+      }
+
+      .slider__toggle {
+        display: block;
+        @include reset-button-style;
         position: absolute;
         top: 50%;
-        width: 29px;
-        height: 29px;
-        transform-origin: 50% 50%;
-        // background-image: url("../img/logo-pink-blue-mobile.svg");
-        border: 2px solid #bec2c7;
-      }
-
-      &--prev {
-        left: 0;
+        transform: translateY(-50%) translateY(6px);
+        height: 100%;
+        width: 80px;
+        font-size: 0;
+        outline: none;
+        cursor: pointer;
 
         &::before {
-          left: 0;
-          transform: translate(5px, -50%) rotate(-45deg);
-          border-bottom: none;
-          border-right: none;
+          content: "";
+          position: absolute;
+          top: 50%;
+          width: 29px;
+          height: 29px;
+          transform-origin: 50% 50%;
+          border: 2px solid #bec2c7;
         }
-      }
 
-      &--next {
-        right: 0;
+        &--prev {
+          left: 0;
 
-        &::before {
+          &::before {
+            left: 0;
+            transform: translate(5px, -50%) rotate(-45deg);
+            border-bottom: none;
+            border-right: none;
+          }
+        }
+
+        &--next {
           right: 0;
-          transform: translate(-5px, -50%) rotate(-45deg);
-          border-left: none;
-          border-top: none;
+
+          &::before {
+            right: 0;
+            transform: translate(-5px, -50%) rotate(-45deg);
+            border-left: none;
+            border-top: none;
+          }
         }
       }
     }
