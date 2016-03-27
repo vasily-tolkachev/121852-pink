@@ -352,17 +352,42 @@
             display: inline-block;
           }
 
+          &::after {
+            content: '';
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            top: 22px;
+            right: 23px;
+            background-repeat: no-repeat;
+          }
         }
 
         .form__entry-field {
+          position: relative;
           display: flex;
           flex-direction: column-reverse;
           margin-top: 5px;
           margin-bottom: 20px;
+
+          &--phone {
+            .form__label::after {
+              background-image: url(../img/icon-phone.svg);
+            }
+          }
+
+          &--mail {
+            .form__label::after {
+              right: 22px;
+              top: 24px;
+              background-image: url(../img/icon-mail.svg);
+            }
+          }
         }
 
         .form__field {
           margin-bottom: 0;
+          padding-right: 60px;
         }
       }
     }

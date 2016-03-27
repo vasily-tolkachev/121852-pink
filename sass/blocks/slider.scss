@@ -128,7 +128,15 @@
   }
 
   &--table-slider {
-    background: $pages-color-gray url(../img/bg-triangle-white.svg) 100% 0 no-repeat;
+    background-color: $pages-color-gray;
+    background-image:
+    linear-gradient(
+      to top left,
+      transparent 50%,
+      white 50%);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 1200px 92px;
   }
 
   @media #{$mobile-width-only} {
@@ -177,6 +185,7 @@
     &--table-slider {
       padding-top: 89px;
       padding-bottom: 68px;
+      background-size: 1200px 90px;
 
       .slider__switcher {
         display: none;
@@ -192,6 +201,7 @@
     &--table-slider {
       padding-top: 148px;
       padding-bottom: 95px;
+      background-size: 1200px 80px;
     }
 
     &--comment-slider {
