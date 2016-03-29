@@ -8,16 +8,24 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header  page-header--open">
       <div class="page-header__wrapper">
-        <a class="logo" href="/index.html">Pink</a>
+        <a class="logo" href="index.html">
+          <picture>
+            <source media = "(min-width: 1200px)"
+            srcset = "img/logo-pink-white-desktop.svg">
+            <source media = "(min-width: 700px)"
+            srcset = "img/logo-pink-white-tablet.svg">
+            <img alt="Pink" src="/img/logo-pink-white-mobile.svg">
+          </picture>
+        </a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/index.html">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Фотографии</a>
@@ -26,7 +34,7 @@
             <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -179,7 +187,13 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__container">
-          <a class="logo  logo--blue" href="/index.html">Pink</a>
+          <a class="logo  logo--blue" href="index.html">
+            <picture>
+              <source media = "(min-width: 1200px)"
+              srcset = "img/logo-pink-blue-desktop.svg">
+              <img alt="Pink" src="img/logo-pink-blue-mobile.svg">
+            </picture>
+          </a>
           <div class="social-links">
             <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
             <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>

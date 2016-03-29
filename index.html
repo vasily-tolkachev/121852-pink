@@ -8,9 +8,17 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header  page-header--open">
       <div class="page-header__wrapper">
-        <a class="logo">Pink</a>
+        <a class="logo">
+          <picture>
+            <source media = "(min-width: 1200px)"
+            srcset = "img/logo-pink-white-desktop.svg">
+            <source media = "(min-width: 700px)"
+            srcset = "img/logo-pink-white-tablet.svg">
+            <img alt="Pink" src="/img/logo-pink-white-mobile.svg">
+          </picture>
+        </a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
@@ -26,7 +34,7 @@
             <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -256,7 +264,14 @@
     <footer class="page-footer  page-footer--index-page">
       <div class="page-footer__wrapper">
         <div class="page-footer__container">
-          <a class="logo  logo--blue">Pink</a>
+          <a class="logo  logo--blue">
+            <picture>
+              <source media = "(min-width: 1200px)"
+              srcset = "img/logo-pink-blue-desktop.svg">
+              <img alt="Pink" src="img/logo-pink-blue-mobile.svg">
+            </picture>
+          </a>
+
           <div class="social-links">
             <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
             <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>
