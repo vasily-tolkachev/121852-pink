@@ -1,0 +1,22 @@
+.logo {
+  line-height: 0;
+
+  img {
+    width: 76px;
+    height: 24px;
+  }
+
+  &--blue {
+    img {
+      width: 147px;
+      height: 40px;
+    }
+  }
+
+  @media #{$tablet-width} {
+    img {
+      width: 147px;
+      height: 40px;
+    }
+  }
+}

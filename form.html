@@ -4,21 +4,28 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pink</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header  page-header--open">
       <div class="page-header__wrapper">
-        <a class="logo" href="/index.html">Pink</a>
+        <a class="logo" href="index.html">
+          <picture>
+            <source media = "(min-width: 1200px)"
+            srcset = "img/logo-pink-white-desktop.svg">
+            <source media = "(min-width: 700px)"
+            srcset = "img/logo-pink-white-tablet.svg">
+            <img alt="Pink" src="/img/logo-pink-white-mobile.svg">
+          </picture>
+        </a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/index.html">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Фотографии</a>
@@ -27,7 +34,7 @@
             <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/"><acronym title="HyperText Markup Language" lang="en">HTML</acronym> Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -70,7 +77,8 @@
             <div class="form__wrapper">
               <div class="form__border-wrapper">
                 <div class="form__title-wrapper">
-                  <legend class="form__group-title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+                  <h2 class="form__group-title">
+                  Ваши безбашенные достижения в&nbsp;путешествии</h2>
                 </div>
                 <div class="form__fields">
 
@@ -106,9 +114,9 @@
             <div class="form__wrapper">
               <div class="form__border-wrapper">
                 <div class="form__title-wrapper">
-                  <legend class="form__group-title  form__group-title--hidden">
+                  <h2 class="form__group-title  form__group-title--hidden">
                     Контактная информация
-                  </legend>
+                  </h2>
                 </div>
                 <div class="form__fields">
                   <div class="form__entry-field  form__entry-field--phone">
@@ -133,7 +141,7 @@
             <div class="form__wrapper">
               <div class="form__border-wrapper">
                 <div class="form__title-wrapper">
-                  <legend class="form__group-title">С&nbsp;каким приложением путешествовали?</legend>
+                  <h2 class="form__group-title">С&nbsp;каким приложением путешествовали?</h2>
                 </div>
                 <div class="form__fields">
                   <div class="form__entry-field  form__entry-field--switch  form__entry-field--radio">
@@ -156,9 +164,9 @@
             <div class="form__wrapper">
               <div class="form__border-wrapper">
                 <div class="form__title-wrapper">
-                  <legend class="form__group-title">
+                  <h2 class="form__group-title">
                     Опишите свои эмоции
-                  </legend>
+                  </h2>
                 </div>
                 <div class="form__entry-field  form__entry-field--textarea">
                   <textarea class="form__field" name="coment" id="comment-field" placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
@@ -179,14 +187,20 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__container">
-          <a class="logo  logo--blue" href="/index.html">Pink</a>
+          <a class="logo  logo--blue" href="index.html">
+            <picture>
+              <source media = "(min-width: 1200px)"
+              srcset = "img/logo-pink-blue-desktop.svg">
+              <img alt="Pink" src="img/logo-pink-blue-mobile.svg">
+            </picture>
+          </a>
           <div class="social-links">
             <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
             <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>
             <a class="social-links__btn social-links__btn--you-tube" href="#">YouTube</a>
           </div>
           <div class="page-footer__copyright">
-            <a class="page-footer__copyright-link" href="#">Разработано <span><acronym title="HyperText Markup Language" lang="en">HTML</acronym> Academy</span></a>
+            <a class="page-footer__copyright-link" href="#">Разработано <span>HTML Academy</span></a>
           </div>
         </div>
       </div>
@@ -195,7 +209,7 @@
     <div class="popup  popup--wrong  popup--hidden">
       <div class="popup__wrapper">
         <div class="popup__title">
-          <nobr>Что-то</nobr> пошло не&nbsp;так!
+          Что-то пошло не&nbsp;так!
         </div>
         <div class="popup__description">
           <p>Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>

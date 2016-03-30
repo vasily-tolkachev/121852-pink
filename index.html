@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header  page-header--open">
       <div class="page-header__wrapper">
-        <a class="logo">Pink</a>
+        <a class="logo">
+          <picture>
+            <source media = "(min-width: 1200px)"
+            srcset = "img/logo-pink-white-desktop.svg">
+            <source media = "(min-width: 700px)"
+            srcset = "img/logo-pink-white-tablet.svg">
+            <img alt="Pink" src="/img/logo-pink-white-mobile.svg">
+          </picture>
+        </a>
         <button class="page-header__toggle-menu" type="button"><span>Меню</span>
         </button>
       </div>
@@ -27,7 +34,7 @@
             <a class="main-nav__link" href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/"><acronym title="HyperText Markup Language" lang="en">HTML</acronym> Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -105,7 +112,7 @@
                   <span class="comment__author-information">25 лет, водитель трамвая</span>
                 </h2>
                 <blockquote class="comment__text">
-                  <p><span>&laquo;</span>Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!<span>&raquo;</span></p>
+                  <p><span>&laquo;</span>Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!<span>&raquo;</span></p>
                 </blockquote>
               </section>
             </div>
@@ -116,7 +123,7 @@
                   <span class="comment__author-information">25 лет, водитель трамвая</span>
                 </h2>
                 <blockquote class="comment__text">
-                  <p><span>&laquo;</span>Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!<span>&raquo;</span></p>
+                  <p><span>&laquo;</span>Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!<span>&raquo;</span></p>
                 </blockquote>
               </section>
             </div>
@@ -127,7 +134,7 @@
                   <span class="comment__author-information">25 лет, водитель трамвая</span>
                 </h2>
                 <blockquote class="comment__text">
-                  <p><span>&laquo;</span>Это приложение перевернуло мой мир и&nbsp;позволило <nobr>по-новому</nobr> взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!<span>&raquo;</span></p>
+                  <p><span>&laquo;</span>Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на привычные серые вещи! А&nbsp;еще я познакомился со&nbsp;своей будущей женой в комментариях к&nbsp;выложенной фотографии!<span>&raquo;</span></p>
                 </blockquote>
               </section>
             </div>
@@ -149,7 +156,7 @@
             <input class="slider__switcher-input  slider__switcher-input--second" type="radio" id="table-slider-btn-2" name="table-slider-toggle" checked>
             <input class="slider__switcher-input  slider__switcher-input--third" type="radio" id="table-slider-btn-3" name="table-slider-toggle">
             <div class="slider__slide">
-              <table class="versions-table" border="1">
+              <table class="versions-table">
                 <tr class="versions-table__header-row">
                   <th class="versions-table__header-cell  versions-table__header-cell--first">
                   </th>
@@ -237,7 +244,7 @@
           <div class="contacts-block__contacts">
             <div class="contacts-block__contact">
               <span class="contacts-block__contact-title">Звоните:</span>
-              <a class="contacts-block__contact-address" href="tel:+78125556666"><nobr>+7 (812) 555-66-66</nobr></a>
+              <a class="contacts-block__contact-address" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts-block__contact">
               <span class="contacts-block__contact-title">Пишите:</span>
@@ -250,21 +257,28 @@
           </div>
         </div>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3751722293583!2d30.320843466741838!3d59.936120064599706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f879780b7%3A0x267b6b7f4f614fb9!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1457108867986" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3751722293583!2d30.320843466741838!3d59.936120064599706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f879780b7%3A0x267b6b7f4f614fb9!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1457108867986" style="border:0" allowfullscreen></iframe>
         </div>
       </div>
     </main>
     <footer class="page-footer  page-footer--index-page">
       <div class="page-footer__wrapper">
         <div class="page-footer__container">
-          <a class="logo  logo--blue">Pink</a>
+          <a class="logo  logo--blue">
+            <picture>
+              <source media = "(min-width: 1200px)"
+              srcset = "img/logo-pink-blue-desktop.svg">
+              <img alt="Pink" src="img/logo-pink-blue-mobile.svg">
+            </picture>
+          </a>
+
           <div class="social-links">
             <a class="social-links__btn social-links__btn--twitter" href="#">Twitter</a>
             <a class="social-links__btn social-links__btn--facebook" href="#">Facebook</a>
             <a class="social-links__btn social-links__btn--you-tube" href="#">YouTube</a>
           </div>
           <div class="page-footer__copyright">
-            <a class="page-footer__copyright-link" href="#">Разработано <span><acronym title="HyperText Markup Language" lang="en">HTML</acronym> Academy</span></a>
+            <a class="page-footer__copyright-link" href="#">Разработано <span>HTML Academy</span></a>
           </div>
         </div>
       </div>

@@ -1,0 +1,44 @@
+.social-links {
+  width: 177px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__btn {
+    box-sizing: border-box;
+    font-size: 0;
+    width: 51px;
+    height: 51px;
+    border: 3px solid $form-field-color-gray;
+    border-radius: 50%;
+
+    &:hover {
+      border-color: $page-color-dark-blue;
+    }
+
+    &--twitter {
+      background: url(../img/icon-twitter.svg) no-repeat 50% 50%;
+      background-size: 18px 18px;
+    }
+
+    &--facebook {
+      background: url(../img/icon-facebook.svg) no-repeat 50% 46%;
+      background-size: 10px 18px;
+    }
+
+    &--you-tube {
+      background: url(../img/icon-youtube.svg) no-repeat 54% 45%;
+      background-size: 17px 14px;
+    }
+  }
+
+  @media #{$tablet-width} {
+    padding-top: 15px;
+    padding-right: 16px;
+  }
+
+  @media #{$desktop-width} {
+    padding-top: 21px;
+    padding-left: 28px;
+  }
+}

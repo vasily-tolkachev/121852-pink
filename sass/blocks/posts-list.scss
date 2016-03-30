@@ -1,0 +1,21 @@
+.posts-list {
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  @media #{$tablet-width} {
+    &__wrapper {
+      @include content-wrapper-tablet;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &__wrapper {
+      padding: 0 130px;
+    }
+  }
+}

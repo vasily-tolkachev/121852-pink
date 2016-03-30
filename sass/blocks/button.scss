@@ -1,0 +1,41 @@
+.button {
+  @include reset-button-style;
+  @include form-field-font-settings;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  background-color: $button-color;
+  width: 100%;
+  height: 63px;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+
+  &:active {
+    color: $button-text-color-active;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    color: white;
+    background-color: $form-field-color-gray;
+  }
+
+  @media #{$tablet-width} {
+    &--send-form {
+      width: 94%;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &--send-form {
+      width: 47%;
+    }
+  }
+}

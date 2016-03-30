@@ -1,0 +1,60 @@
+.transparent-btn {
+  @include reset-button-style;
+  @include reset-link-style
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 25px/27.5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding: 16px;
+  margin-bottom: 10px;
+
+  border: 3px solid $pages-text-color-pink;
+  color: $pages-text-color-pink;
+  &:hover {
+    background-color: $pages-text-color-pink;
+    color: white;
+  }
+
+  &:active {
+    color: #e06989;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--gray {
+    color: $cansel-btn-color-dark-gray;
+    border-color: $cansel-btn-color-dark-gray;
+
+    &:hover {
+      background-color: $cansel-btn-color-gray;
+      color: $cansel-btn-color-darkest-gray;
+      border-color: $cansel-btn-color-darkest-gray;
+    }
+
+    &:active {
+      background-color: $cansel-btn-color-darkest-gray;
+      color: $cansel-btn-color-dark-gray;
+      border-color: $cansel-btn-color-darkest-gray;
+    }
+  }
+
+  &--white {
+    color: white;
+    border-color: white;
+
+    &:hover {
+      background-color: white;
+      color: $pages-text-color-pink;
+    }
+
+    &:active {
+      color: #f2ced5;
+    }
+  }
+}
