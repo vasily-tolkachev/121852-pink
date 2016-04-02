@@ -12,6 +12,8 @@
     width: 62px;
     height: 12px;
     margin: 0 auto;
+
+
   }
 
   &__switcher-label {
@@ -41,6 +43,18 @@
       width: 6px;
       height: 6px;
       background-color: $cansel-btn-color-darkest-gray;
+    }
+
+    &:hover {
+      &:after {
+        background-color: #7e868f;
+      }
+    }
+
+    &:active {
+      &:after {
+        background-color: #e9ebec;
+      }
     }
   }
 
@@ -200,7 +214,7 @@
 
     &--table-slider {
       padding-top: 148px;
-      padding-bottom: 95px;
+      padding-bottom: 97px;
       background-size: 1200px 80px;
     }
 
@@ -261,6 +275,18 @@
             transform: translate(-5px, -50%) rotate(-45deg);
             border-left: none;
             border-top: none;
+          }
+        }
+
+        &:hover {
+          &::before {
+            border-color: #7e868f;
+          }
+        }
+
+        &:active{
+          &::before {
+            border-color: #fbfbfb;
           }
         }
       }

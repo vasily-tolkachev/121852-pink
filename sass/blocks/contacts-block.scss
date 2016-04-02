@@ -34,6 +34,20 @@
 
   &__contact {
     margin-bottom: 18px;
+
+    &--email {
+      .contacts-block__contact-address {
+        &:hover {
+          color: $pages-text-color;
+          text-decoration: underline;
+        }
+
+        &:active {
+          color: transparentize($pages-text-color, 0.7);
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   @media #{$tablet-width} {
