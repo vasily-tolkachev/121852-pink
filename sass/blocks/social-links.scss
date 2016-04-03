@@ -16,6 +16,10 @@
       border-color: $page-color-dark-blue;
     }
 
+    &:active {
+      opacity: 0.3;
+    }
+
     &--twitter {
       background: url(../img/icon-twitter.svg) no-repeat 50% 50%;
       background-size: 18px 14px;

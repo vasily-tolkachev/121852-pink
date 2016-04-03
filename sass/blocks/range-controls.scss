@@ -1,8 +1,8 @@
 .range-controls {
   display: block;
   position: relative;
-  &__scale {
 
+  &__scale {
     width: 100%;
     height: 2px;
     background-color: $page-color-dark-blue;
@@ -19,5 +19,9 @@
     height: 10px;
     border: 2px solid $pages-text-color-pink;
     border-radius: 50%;
+
+    &:active {
+      background-color: $pages-text-color-pink;
+    }
   }
 }

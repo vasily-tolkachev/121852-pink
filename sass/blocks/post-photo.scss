@@ -43,34 +43,41 @@
     margin: 40px auto 15px auto;
   }
 
+  &__filter-button-icon {
+    fill: #b5b9be;
+
+    &--fill {
+      margin-top: 1px;
+    }
+
+    &--contrast {
+      margin-top: 6px;
+    }
+  }
+
   &__filter-button {
     @include reset-button-style;
     box-sizing: border-box;
     width: 50px;
     height: 50px;
+    outline: none;
 
-    &--filter1 {
-      background: transparent url(../img/icon-editor-crop-gray.svg) 50% 50% no-repeat;
+    &:hover {
+      .post-photo__filter-button-icon {
+        fill: #8d949b;
+      }
     }
 
-    &--filter2 {
-      background: transparent url(../img/icon-editor-fill-gray.svg) 50% 50% no-repeat;
+    &--active {
+      .post-photo__filter-button-icon {
+        fill: $pages-text-color-pink;
+      }
     }
 
-    &--filter3 {
-      background: transparent url(../img/icon-editor-contrast-gray.svg) 50% 50% no-repeat;
-    }
-
-    &--filter1-active {
-      background: transparent url(../img/icon-editor-crop.svg) 50% 50% no-repeat;
-    }
-
-    &--filter2-active {
-      background: transparent url(../img/icon-editor-fill.svg) 50% 50% no-repeat;
-    }
-
-    &--filter3-active {
-      background: transparent url(../img/icon-editor-contrast.svg) 50% 50% no-repeat;
+    &--active:hover  {
+      .post-photo__filter-button-icon {
+        fill: $pages-text-color-pink;
+      }
     }
   }
 
@@ -177,43 +184,43 @@
       z-index: 1;
     }
 
+    &__filter-button-icon {
+      display: inline-block;
+      fill: $pages-text-color-pink;
+
+      &--crop {
+        margin-top: 11px;
+        margin-left: 2px;
+        width: 24px;
+        height: 24px;
+      }
+
+      &--fill {
+        margin-top: 15px;
+        margin-left: 2px;
+        width: 26px;
+        height: 24px;
+      }
+
+      &--contrast {
+        margin-top: 9px;
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
     &__filter-button {
       width: 50px;
       height: 50px;
       margin-top: -4px;
       margin-bottom: 26px;
+      text-align: left;
 
-      &--filter1 {
-        background-image: url(../img/icon-editor-crop.svg);
-        background-size: 25px 25px;
-        background-position: 2px 50%;
-      }
-
-      &--filter2 {
-        background-image: url(../img/icon-editor-fill.svg);
-        background-size: 25px 25px;
-        background-position: 3px 50%;
-      }
-
-      &--filter3 {
-        background-image: url(../img/icon-editor-contrast.svg);
-        background-size: 16px 16px;
-        background-position: 8px 50%;
-      }
-
-      &--filter1-active {
-        background-size: 25px 25px;
-        background-position: 2px 50%;
-      }
-
-      &--filter2-active {
-        background-size: 25px 25px;
-        background-position: 3px 50%;
-      }
-
-      &--filter3-active {
-        background-size: 16px 16px;
-        background-position: 8px 50%;
+      &:hover {
+        .post-photo__filter-button-icon {
+          fill: $pages-text-color-pink;
+        }
       }
     }
 
@@ -298,41 +305,35 @@
       }
     }
 
+    &__filter-button-icon {
+
+      &--crop {
+        margin-top: 1px;
+        margin-left: -1px;
+        width: 48px;
+        height: 48px;
+      }
+
+      &--fill {
+        margin-top: 6px;
+        margin-left: -2px;
+        width: 52px;
+        height: 47px;
+      }
+
+      &--contrast {
+        margin-top: 12px;
+        margin-left: 6px;
+        width: 33px;
+        height: 33px;
+      }
+    }
+
     &__filter-button {
       width: 60px;
       height: 60px;
       margin-top: -4px;
       margin-bottom: 13px;
-
-      &--filter1 {
-        background-size: 48px 48px;
-        background-position: -2px 0;
-      }
-
-      &--filter2 {
-        background-size: 48px 48px;
-        background-position: 0 53%;
-      }
-
-      &--filter3 {
-        background-size: 32px 32px;
-        background-position: 22% 47%;
-      }
-
-      &--filter1-active {
-        background-size: 48px 48px;
-        background-position: -2px 0;
-      }
-
-      &--filter2-active {
-        background-size: 48px 48px;
-        background-position: 0 53%;
-      }
-
-      &--filter3-active {
-        background-size: 32px 32px;
-        background-position: 22% 47%;
-      }
     }
   }
 }
