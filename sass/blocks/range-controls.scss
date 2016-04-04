@@ -19,6 +19,7 @@
     height: 10px;
     border: 2px solid $pages-text-color-pink;
     border-radius: 50%;
+    cursor: pointer;
 
     &:active {
       background-color: $pages-text-color-pink;
