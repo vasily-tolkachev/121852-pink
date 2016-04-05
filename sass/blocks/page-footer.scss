@@ -6,7 +6,7 @@
 
   &__container {
     padding: 45px 0;
-    min-height: 204px;
+    height: 204px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,7 +19,7 @@
     text-align: right;
     color: $pages-text-color;
     width: 130px;
-    min-height: 34px;
+    height: 34px;
 
     span {
       display: none;
@@ -62,7 +62,7 @@
 
     &__container {
       padding: 0;
-      min-height: 125px;
+      height: 125px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -75,13 +75,13 @@
     &--photo-page {
       .page-footer__container {
         padding-top: 0;
-        min-height: 111px;
+        height: 111px;
       }
     }
 
     &--index-page {
       .page-footer__container {
-        min-height: 112px;
+        height: 112px;
       }
     }
   }

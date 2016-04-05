@@ -88,7 +88,7 @@
     &__content {
       box-sizing: border-box;
       padding: 24px 31px 18px 28px;
-      min-height: 155px;
+      height: 155px;
       justify-content: space-between;
     }
 
@@ -126,7 +126,7 @@
       }
 
       .photo-post__content {
-        min-height: 121px;
+        height: 121px;
         padding: 24px 28px 15px 28px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -150,7 +150,7 @@
       }
 
       .photo-post__content {
-        min-height: auto;
+        height: auto;
         padding-right: 31px;
       }
 
