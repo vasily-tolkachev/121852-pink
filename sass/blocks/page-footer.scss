@@ -6,7 +6,7 @@
 
   &__container {
     padding: 45px 0;
-    min-height: 204px;
+    height: 204px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,16 +16,28 @@
   &__copyright-link {
     @include reset-link-style;
     display: block;
-    text-align: left;
+    text-align: right;
     color: $pages-text-color;
-    padding-right: 40px;
-    width: 90px;
-    min-height: 34px;
-    background: url(../img/logo-htmlacademy.svg) no-repeat 100% 0;
-    background-size: 27px 34px;
+    width: 130px;
+    height: 34px;
 
     span {
       display: none;
+    }
+  }
+
+  &__copyright-icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: $pages-text-color-pink;
+    margin-left: 10px;
+
+    &:hover {
+      fill: #283645;
+    }
+
+    &:active {
+      fill: transparentize(#283645, 0.7);
     }
   }
 
@@ -50,7 +62,7 @@
 
     &__container {
       padding: 0;
-      min-height: 125px;
+      height: 125px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -58,19 +70,18 @@
 
     &__copyright-link {
       margin-top: 22px;
-      padding-right: 38px;
     }
 
     &--photo-page {
       .page-footer__container {
-        padding-top: 0px;
-        min-height: 111px;
+        padding-top: 0;
+        height: 111px;
       }
     }
 
     &--index-page {
       .page-footer__container {
-        min-height: 112px;
+        height: 112px;
       }
     }
   }
@@ -84,7 +95,7 @@
 
     &__copyright-link {
       font-size: 18px;
-      padding-right: 63px;
+      width: 155px;
     }
 
     &--index-page {

@@ -1,4 +1,6 @@
 .versions-table {
+  border-collapse: separate;
+  border-spacing: 0;
 
   &__header-cell {
     padding: 16px;
@@ -8,7 +10,7 @@
     background-color: $page-color-dark-blue;
     border: none;
     border-left: 2px solid $pages-color-dark-gray;
-    border-right: 2px solid $pages-color-dark-gray;
+
 
     span:first-child {
       display: block;
@@ -67,6 +69,7 @@
     background-color: white;
     border: 2px solid $pages-color-dark-gray;
     border-top: none;
+    border-right: none;
 
     span:last-of-type {
       display: none;
@@ -75,18 +78,18 @@
     &::after {
       content: '';
       position: absolute;
-      width: 50px;
-      height: 50px;
-      top: 50%;
-      right: 8px;
-      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      top: 10px;
+      right: 13px;
       background: url(../img/icon-yes.svg) no-repeat 50% 50%;
-      background-size: 30px 30px;
+      background-size: 34px 24px;
     }
 
     &--no {
       &::after {
         background: url(../img/icon-no.svg) no-repeat 50% 50%;
+        background-size: 26px 26px;
       }
     }
   }
@@ -110,17 +113,7 @@
 
     &__header-cell {
       min-width: 155px;
-      padding: 14px 14px 6px 14px;
-      border-bottom: 2px solid $page-color-dark-blue;
-      border-right: 2px solid $pages-color-dark-gray;
-
-      &:first-of-type {
-        border-right: 2px solid $page-color-dark-blue;
-      }
-
-      &:last-of-type {
-        border-right: 2px solid $page-color-dark-blue;
-      }
+      padding: 15px 14px 6px 14px;
 
       &--first {
         background-color: transparent;
@@ -158,6 +151,10 @@
       line-height: 30px;
       padding: 7px 16px 8px 16px;
 
+      &:last-of-type {
+         border-right: 2px solid $pages-color-dark-gray;
+      }
+
       span:first-of-type {
         display: none;
       }
@@ -173,8 +170,9 @@
       }
 
       &::after {
+        top: 0;
         right: 50%;
-        transform: translate(50%, -50%);
+        transform: translate(50%, 0);
       }
     }
   }
@@ -212,6 +210,10 @@
       font-size: 18px;
       line-height: 30px;
       padding: 14px 22px 15px 22px;
+
+      &::after {
+        top: 12px;
+      }
     }
   }
 }
