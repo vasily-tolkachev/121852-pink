@@ -162,6 +162,7 @@
       &--first {
         span:first-of-type {
           display: inline-block;
+          vertical-align: baseline;
         }
 
         &::after {
