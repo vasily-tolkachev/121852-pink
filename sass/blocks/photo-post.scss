@@ -63,8 +63,8 @@
       top: 0;
       display: block;
       box-sizing: border-box;
-      width: 140px;
-      height: 36px;
+      min-width: 140px;
+      min-height: 36px;
       padding: 6px;
       text-align: center;
       background-color: $pages-text-color-pink;
@@ -88,7 +88,7 @@
     &__content {
       box-sizing: border-box;
       padding: 24px 31px 18px 28px;
-      height: 155px;
+      min-height: 155px;
       justify-content: space-between;
     }
 
@@ -126,7 +126,7 @@
       }
 
       .photo-post__content {
-        height: 121px;
+        min-height: 121px;
         padding: 24px 28px 15px 28px;
         flex-direction: row;
         flex-wrap: wrap;

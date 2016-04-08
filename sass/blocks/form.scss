@@ -18,10 +18,8 @@
     }
 
     &--contact-group {
-      .form__label {
-        span:last-of-type {
-          display: none;
-        }
+      .form__contact-label {
+        display: none;
       }
     }
   }
@@ -322,10 +320,8 @@
           padding-bottom: 35px;
         }
 
-        .form__entry-field--textarea {
-          .form__field {
-            height: 193px;
-          }
+        .form__field--textarea {
+          height: 193px;
         }
       }
 
@@ -337,18 +333,18 @@
           padding-top: 38px;
         }
 
+        .form__mobile-contact-label {
+          display: none;
+        }
+
+        .form__contact-label {
+          display: inline-block;
+          vertical-align: top;
+        }
+
         .form__label {
           margin-top: 10px;
           padding-left: 20px;
-
-          span:first-of-type {
-            display: none;
-          }
-
-          span:last-of-type {
-            display: inline-block;
-            vertical-align: top;
-          }
 
           &::after {
             content: '';
@@ -359,6 +355,16 @@
             right: 23px;
             background-repeat: no-repeat;
           }
+
+          &--phone::after {
+            background-image: url(../img/icon-phone.svg);
+          }
+
+          &--mail::after {
+            right: 22px;
+            top: 24px;
+            background-image: url(../img/icon-mail.svg);
+          }
         }
 
         .form__entry-field {
@@ -367,20 +373,6 @@
           flex-direction: column-reverse;
           margin-top: 5px;
           margin-bottom: 20px;
-
-          &--phone {
-            .form__label::after {
-              background-image: url(../img/icon-phone.svg);
-            }
-          }
-
-          &--mail {
-            .form__label::after {
-              right: 22px;
-              top: 24px;
-              background-image: url(../img/icon-mail.svg);
-            }
-          }
         }
 
         .form__field {
@@ -474,10 +466,8 @@
           padding: 40px 58px 27px 58px;
         }
 
-        .form__entry-field--textarea {
-          .form__field {
-            height: 128px;
-          }
+        .form__field--textarea {
+          height: 128px;
         }
       }
 
