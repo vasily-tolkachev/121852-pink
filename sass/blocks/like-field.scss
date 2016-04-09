@@ -10,10 +10,10 @@
   color: $pages-text-color-pink;
   font-size: 0;
 
-
   &__label {
     margin-right: 3px;
     font-size: 12px;
+    overflow: hidden;
   }
 
   &__count{
@@ -28,6 +28,7 @@
     background: url(../img/icon-heart.svg) no-repeat 50% 0;
     background-size: 15px 13px;
     margin-right: 17px;
+    flex-shrink: 0
   }
 
   @media #{$tablet-width} {
@@ -35,7 +36,7 @@
     justify-content: space-between;
 
     &__btn {
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
